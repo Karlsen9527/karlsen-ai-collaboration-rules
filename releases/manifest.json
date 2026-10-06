@@ -1,12 +1,18 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "1.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "284cae9edb5f41ef88d26dc7ce19e4cf8ab167468e3de0adf04d53879209d8c0",
   "hash_algorithm": "sha256",
   "hash_scope": "raw bytes of core/PROTOCOL.md only",
-  "summary": "1.0.0 正式发布候选：仅修正正文头部的目标状态与生效依据说明，R001–R021 不变；待精确正文确认，尚未生效，未部署自动同步。",
-  "approved_release": null
+  "summary": "1.0.0 正式批准生效：统一协作正文、薄加载入口、项目与任务模板；正文与已批准候选一致，未部署自动同步。",
+  "approved_release": {
+    "version": "1.0.0",
+    "protocol_sha256": "284cae9edb5f41ef88d26dc7ce19e4cf8ab167468e3de0adf04d53879209d8c0",
+    "approval_reference": "approval-v1.0.0-20261006-284cae9e",
+    "candidate_commit": "8f9972c08e74738476edeb5b45b4ec26c3635f2a",
+    "approved_on": "2026-10-06"
+  }
 }

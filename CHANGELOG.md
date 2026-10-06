@@ -1,5 +1,14 @@
 # 变更记录
 
+## 1.0.0 — approved — 2026-10-06
+
+- 用户确认固定候选后，发布清单标记 approved、effective=true；配套发布状态说明同步更新。
+- 批准候选提交：8f9972c08e74738476edeb5b45b4ec26c3635f2a。
+- 正文 SHA-256：284cae9edb5f41ef88d26dc7ce19e4cf8ab167468e3de0adf04d53879209d8c0。
+- 批准引用：approval-v1.0.0-20261006-284cae9e；证据保留在经过认证的授权渠道，仓库不存审批原文。
+- 相对 initial-review，仅修正文首目标状态与生效依据两行；R001–R021 完全不变。候选阶段与正式阶段验收要求已区分。
+- 未启用自动拉取、同步、CI 或全客户端接入；没有创建 GitHub Release 或版本标签。
+
 ## 1.0.0 — initial-review — 2026-10-06
 
 - 新增《通用对话协作规范》唯一正文，稳定标识 general-collaboration-protocol。

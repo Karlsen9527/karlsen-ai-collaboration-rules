@@ -2,11 +2,11 @@
 
 中文名称：《通用对话协作规范》  
 稳定标识：general-collaboration-protocol  
-拟定版本：1.0.0；状态：initial-review（尚未生效）。
+版本：1.0.0；发布状态：approved（已批准生效）。
 
-initial-review 仅指本仓库版本尚未正式发布生效、自动加载尚未启用，不撤销对话中已确认的工作约定。
+发布状态以同一提交的发布清单及可信批准证据为准。规范批准生效与工具自动加载是不同事项；自动加载尚未启用。
 
-这是拟发布到 GitHub 私有仓库 karlsen-ai-collaboration-rules 的第一版文档包。创建或推送仓库的许可不等于批准规则全文；当前没有 approved 发布版本。仓库可见性及推送成功需要在 GitHub 实际验证，本地文件不证明这些状态。
+这是 GitHub 私有仓库 karlsen-ai-collaboration-rules 的首个正式规范版本。当前正文来自用户明确批准的固定候选，版本、正文 SHA-256、候选提交与批准引用见[发布清单](releases/manifest.json)及[发布记录](releases/README.md)。创建或推送仓库的许可不等于规则全文批准；仓库记录本身不替代可信批准证据。
 
 ## 结构
 
