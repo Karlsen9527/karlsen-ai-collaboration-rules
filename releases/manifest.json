@@ -1,0 +1,12 @@
+{
+  "protocol_id": "general-collaboration-protocol",
+  "version": "1.0.0",
+  "status": "initial-review",
+  "effective": false,
+  "protocol_path": "core/PROTOCOL.md",
+  "protocol_sha256": "4ae3acf35824fa11f8a0b53b39e66525748ba2ea84a2abfcb2c49fdd3b34a130",
+  "hash_algorithm": "sha256",
+  "hash_scope": "raw bytes of core/PROTOCOL.md only",
+  "summary": "首版审查草稿：统一协作正文、薄加载入口、项目与任务模板；尚未生效，未部署自动同步。",
+  "approved_release": null
+}

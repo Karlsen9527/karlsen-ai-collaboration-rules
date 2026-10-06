@@ -1,0 +1,28 @@
+# Local secrets and private task material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets/
+private/
+task-contexts/
+TASK_CONTEXT.local.md
+*.local.md
+# Local tools and generated files
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+.cache/
+.tmp/
+dist/
+# Original uploads are not repository inputs
+uploads/
+originals/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
