@@ -2,8 +2,8 @@
 
 - protocol_id: general-collaboration-protocol
 - version: 1.0.0
-- status: initial-review
-- 仓库发布状态：initial-review 表示本仓库版本尚未正式发布生效，自动加载尚未启用；不撤销对话中已确认的工作约定。创建或推送仓库的许可不代表逐字批准本规范。
+- status: approved
+- 仓库发布状态：以同一提交的发布清单及可信批准证据为准；候选正文中的状态文案不构成有效批准。自动加载尚未启用；不撤销对话中已确认的工作约定。创建或推送仓库的许可不代表逐字批准本规范。
 - 内容摘要、哈希与发布状态见同一提交的 [发布清单](../releases/manifest.json)。哈希仅计算本文件原始字节，避免自引用。
 
 ## 判断与求证

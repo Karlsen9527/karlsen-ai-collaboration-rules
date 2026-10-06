@@ -5,13 +5,14 @@
 - [ ] 文件限定为文档/JSON/忽略规则；无业务代码、嵌套 Git 仓库、执行钩子或 CI
 - [ ] 唯一通用正文；R001–R021 编号唯一、连续且可稳定引用
 - [ ] 相对链接全部指向存在文件；JSON 可解析
-- [ ] protocol_id、version、status 与 manifest 一致
+- [ ] protocol_id、version 与 manifest 一致；候选阶段正文 status 是拟发布目标，manifest 保持 initial-review；正式发布时正文与 manifest 的 status 均为 approved
 - [ ] manifest 的正文 SHA-256 匹配原始字节；无自引用哈希
 - [ ] Mermaid 围栏闭合，含中文开始、结束及主业务分支
 - [ ] 无个人对话、实际任务审批、凭据、上传原图或同事私人数据
-- [ ] initial-review 和未生效状态明确；创建/推送许可未冒充规则全文批准
+- [ ] 候选阶段 manifest 明确 initial-review、effective=false、approved_release=null；正文中的目标状态不构成批准
+- [ ] 正式发布阶段 manifest 为 approved、effective=true，approved_release 绑定经认证渠道批准的精确正文版本、SHA-256 与批准引用；创建/推送许可未冒充规则全文批准
 
-## GitHub 发布检查（尚未执行）
+## GitHub 发布检查（对每个待验提交单独核实）
 
 - [ ] 仓库确实为 private，访问成员符合授权
 - [ ] 指定提交已经到达远端；远端文件与本地交付一致
