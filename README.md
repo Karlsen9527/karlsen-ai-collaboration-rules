@@ -1,37 +1,43 @@
 # AI 协作规范仓库
 
-中文名称：《通用对话协作规范》  
-稳定标识：general-collaboration-protocol  
-版本：1.0.0；发布状态：approved（已批准生效）。
+本仓库维护唯一通用对话正文、独立工程标准与目录标准。发布和生效状态以同一固定快照的对应清单及可核对的可信批准为准；本文的版本导航不构成批准，也不证明部署。
 
-发布状态以同一提交的发布清单及可信批准证据为准。规范批准生效与工具自动加载是不同事项；自动加载尚未启用。
+## 发布单元与版本来源
 
-这是 GitHub 私有仓库 karlsen-ai-collaboration-rules 的首个正式规范版本。当前正文来自用户明确批准的固定候选，版本、正文 SHA-256、候选提交与批准引用见[发布清单](releases/manifest.json)及[发布记录](releases/README.md)。创建或推送仓库的许可不等于规则全文批准；仓库记录本身不替代可信批准证据。
+| 单元 | 标识 | 本快照正文版本 | 版本唯一来源 | 状态与材料清单 |
+| --- | --- | --- | --- | --- |
+| 通用对话 | general-collaboration-protocol | 2.0.0 | [core 正文](core/PROTOCOL.md) | [根清单](releases/manifest.json) |
+| 工程协作 | agent-engineering-collaboration | 1.0.0 | [工程正文](standards/AGENT_COLLABORATION.md) | [独立清单](standards/releases/agent-collaboration/1.0.0/manifest.json) |
+| 目录与版本管理 | project-structure-and-versioning | 1.0.0 | [目录正文](standards/PROJECT_STRUCTURE.md) | [原独立清单](standards/releases/project-structure/1.0.0/manifest.json) |
+
+没有单一“仓库总版本”。两行 Codex 偏好与模板是逐文件固定的附属材料，不另设版本权威。core 2.0.0 的兼容契约随其精确材料批准，不追认 core 1.0.0 已承诺该契约。旧合规流程可能需调整原始字节核验、并发与历史证据处理；仅保留旧条文不证明完全兼容。工程标准采用仍由各项目决定。
 
 ## 结构
 
-- [core/PROTOCOL.md](core/PROTOCOL.md)：唯一通用正文，使用稳定规则编号
-- [releases/manifest.json](releases/manifest.json)：版本、状态、摘要、正文 SHA-256
-- [AGENTS.md](AGENTS.md) 与 [CLAUDE.md](CLAUDE.md)：薄加载入口，不复制正文
-- [adapters/README.md](adapters/README.md)：模型/工具接入契约及未实现边界
-- [templates/project-spec.md](templates/project-spec.md)：项目规范模板
-- [templates/task-context.md](templates/task-context.md)：任务上下文空模板，实例存于任务私有空间
-- [projects/rules-repository/PROJECT_SPEC.md](projects/rules-repository/PROJECT_SPEC.md)：本仓库实施规范
-- [releases/README.md](releases/README.md)：草稿转正式的发布约定
-- [CHANGELOG.md](CHANGELOG.md)：内容变更记录
-- [ACCEPTANCE.md](ACCEPTANCE.md)：验收与接入测试清单
-- [.gitignore](.gitignore)：降低意外纳入私有文件的风险
+- [AGENTS.md](AGENTS.md) 与 [CLAUDE.md](CLAUDE.md)：薄加载入口
+- [adapters/README.md](adapters/README.md)：接入与缓存契约、运行验证边界
+- [Codex 接入说明](adapters/codex/README.md)及[两行配置示例](adapters/codex/config.toml.example)：不自动安装
+- [项目模板](templates/project-spec.md)、[工程任务模板](templates/task-context.md)、[最小示例与唯一 A01–A16 场景](templates/MINIMAL_EXAMPLES.md)
+- [本仓库实施说明](projects/rules-repository/PROJECT_SPEC.md)：稳定维护职责与流程
+- [发布约定](releases/README.md)、[内容变更记录](CHANGELOG.md)、[验收要求](ACCEPTANCE.md)
+- [.gitignore](.gitignore)：降低误纳入风险，不是访问控制
 
 ## 使用与信任
 
-主干按 projects/<project-id>/ 组织项目，不用长期项目分支分隔上下文；短期变更分支可用于审查。业务代码保留在各自业务仓库。
+主干按 projects/<project-id>/ 组织项目，不用长期项目分支隔离上下文；短期变更分支用于审查，业务代码保留在业务仓库。任务只加载通用正文、明确当前项目及自己的任务上下文；工程标准只对明确采用的任务适用。
 
-任务只读取通用正文、明确当前项目及自己的上下文。共享仓库只包含可共享规范；目录不是权限隔离。获得仓库权限的成员可看到仓库内所有项目规范，不得将个人对话、任务审批、凭据、内部工作笔记、上传原图或同事私人数据提交进来。
+目录不是权限隔离，获得仓库访问权的成员可看到仓库内全部项目规范。不提交个人对话、实际审批原文、身份秘密、凭据、私人日志、上传原图或同事私人数据。SHA-256 证明内容一致，不证明身份、授权或运行通过。
 
-正式接入须先建立可信发布源，再核验同一提交的正文与清单。SHA-256 用于内容一致性校验，不证明批准者身份或授权。加载入口不会自行同步，也不保证任意客户端会发现或执行它。参见[接入约定](adapters/README.md)。
+先固定可信来源，再同提交核验正文、清单和批准引用。新版本只触发影响评估，不自动更新旧项目 pin、用户模型配置或任务 revision；源仓库发布、项目采纳与客户端部署分别批准、分别验收。读取入口不保证客户端会发现或执行它。
+
+## 历史固定入口
+
+- [core 1.0.0 正文](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/7115cc9e8c262f6d07c7f89558c1f477593bf8e5/core/PROTOCOL.md)与[当时根清单](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/7115cc9e8c262f6d07c7f89558c1f477593bf8e5/releases/manifest.json)，固定提交 7115cc9e8c262f6d07c7f89558c1f477593bf8e5。原正文 SHA-256：284cae9edb5f41ef88d26dc7ce19e4cf8ab167468e3de0adf04d53879209d8c0。该版没有历史标签，不补造。
+- [目录标准 1.0.0 快照](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/7208cef99ea7783a5b574b5f6829889795e1c03e)，原标签 project-structure-v1.0.0 指向 7208cef99ea7783a5b574b5f6829889795e1c03e；历史清单引用 core 1.0.0 保持原样。
+- 历史版本不因出现新版本而自动 revoked 或 effective=false。撤销需真实决定；当前 main 同名文件不能代替旧版字节。
 
 ## 维护方式
 
-维护者提出变更，用户批准确切正文后才能发布 approved 版本。首次批准流程见[发布约定](releases/README.md)。后续新增模型复用同一正文，仅增加必要入口；不得复制分叉通用规则。
+维护者先形成精确最终字节与差异，再取得对应内容及有界动作批准。正文冻结后不回填批准状态或日期，真实审批只进入获准清单字段；实际远端结果放发布回执。具体见发布约定。不自动创建工作流、签名服务、同步器或 GitHub Release。
 
-相关官方资料：[Claude 的 AGENTS.md 说明](https://code.claude.com/docs/en/memory#agents-md)、[Anthropic Constitution](https://www.anthropic.com/constitution)、[Agent Skills 规范](https://agentskills.io/specification)。这些资料仅帮助理解各自机制，不构成本仓库规则或自动执行保证。
+参考资料：[Claude 的 AGENTS.md 说明](https://code.claude.com/docs/en/memory#agents-md)、[Anthropic Constitution](https://www.anthropic.com/constitution)、[Agent Skills 规范](https://agentskills.io/specification)。资料仅解释各自机制，不构成本仓库自动执行保证。
