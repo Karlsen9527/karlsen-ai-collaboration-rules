@@ -1,8 +1,8 @@
 {
   "standard_id": "agent-engineering-collaboration",
   "version": "1.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "document": {
     "path": "standards/AGENT_COLLABORATION.md",
     "sha256": "65cf7f18e4f8b820a3f9c3cd9e6e4f1363f57850385b3297a9c4d4b018e4620b",
@@ -40,5 +40,90 @@
     "target_tag": "project-structure-v1.0.0",
     "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json"
   },
-  "approval": null
+  "approval": {
+    "reference": "approval-core-2.0.0-agent-collaboration-1.0.0-20261007",
+    "approved_at": "2026-10-07T11:06:30Z",
+    "candidate_commit": "d6938585653d580e6eb0d1112641f04df95c5b4b",
+    "standard_id": "agent-engineering-collaboration",
+    "version": "1.0.0",
+    "document_path": "standards/AGENT_COLLABORATION.md",
+    "document_sha256": "65cf7f18e4f8b820a3f9c3cd9e6e4f1363f57850385b3297a9c4d4b018e4620b",
+    "material_files": [
+      {
+        "path": "ACCEPTANCE.md",
+        "sha256": "5ff5ca11189607968a60c04134b778f0aa3310b2d8acb1b079d9bbb28193c886",
+        "size_bytes": 3280
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "534e490b2548a7afa733135c69818b9510cf7c0671245b4c7681c1fd296f1555",
+        "size_bytes": 1034
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "3b715654e2c91eb2be1f9b2feff3b5c8541a5dbed1918bf20ccbbf24cd8d1ded",
+        "size_bytes": 2498
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "ec8c76d1075f281c6e73a8abcccbad78250e47031c757b3e2203b3672f499647",
+        "size_bytes": 653
+      },
+      {
+        "path": "README.md",
+        "sha256": "25935a0abef0689a353dfcf5892698d5845c3b123bbc0598bccfd0e2600ea18c",
+        "size_bytes": 4522
+      },
+      {
+        "path": "adapters/README.md",
+        "sha256": "8fa365b26d5b8ffc5035748eec8cd60e3e29ec19369edaecafea0ad7a240f339",
+        "size_bytes": 2689
+      },
+      {
+        "path": "adapters/codex/README.md",
+        "sha256": "8e065950acd6e9a0b3ee29a0a0597741b8db528ac3eb6e264999cc60ae900b8e",
+        "size_bytes": 3388
+      },
+      {
+        "path": "adapters/codex/config.toml.example",
+        "sha256": "d07a1b4ad2cb84d293d1700819004488b4c17dcbd40e21ca7681e4e486462e45",
+        "size_bytes": 55
+      },
+      {
+        "path": "core/PROTOCOL.md",
+        "sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
+        "size_bytes": 13502
+      },
+      {
+        "path": "projects/rules-repository/PROJECT_SPEC.md",
+        "sha256": "6c914526fd5ef1aac5acb2d68cece6146ed05790509e2afe8d74be7578310fb3",
+        "size_bytes": 3565
+      },
+      {
+        "path": "releases/README.md",
+        "sha256": "1ec8bf643bb627415265309ddc53566dc4035dec94eea4a156ad2a025dafe4d6",
+        "size_bytes": 12105
+      },
+      {
+        "path": "standards/AGENT_COLLABORATION.md",
+        "sha256": "65cf7f18e4f8b820a3f9c3cd9e6e4f1363f57850385b3297a9c4d4b018e4620b",
+        "size_bytes": 23693
+      },
+      {
+        "path": "templates/MINIMAL_EXAMPLES.md",
+        "sha256": "ce9119db2bc096787f6b349961b6ea4843cce8ce52e331b53e06880e1abfc0f3",
+        "size_bytes": 12751
+      },
+      {
+        "path": "templates/project-spec.md",
+        "sha256": "b7b6c00d679d4fc6ce6af6900c710f85ed6b3a3a7047f3650ecb708956c97382",
+        "size_bytes": 1791
+      },
+      {
+        "path": "templates/task-context.md",
+        "sha256": "aa517f9e40a86d0f902c4699fa7b6517f4f78b5b2782ca3dfeff709c3ae3833b",
+        "size_bytes": 8306
+      }
+    ]
+  }
 }

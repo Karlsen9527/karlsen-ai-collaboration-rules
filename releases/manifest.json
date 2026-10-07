@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "2.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; neither manifest is included",
   "summary": "2.0.0 内容：保留 R001–R021 并补充可核验证据、并发与历史边界，定义规范兼容契约；关联独立工程协作标准 1.0.0、任务模板及 Codex 偏好材料；不自动部署或迁移。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "2.0.0",
+    "protocol_sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
+    "approval_reference": "approval-core-2.0.0-agent-collaboration-1.0.0-20261007",
+    "candidate_commit": "d6938585653d580e6eb0d1112641f04df95c5b4b",
+    "approved_on": "2026-10-07"
+  },
   "target_tag": "core-v2.0.0",
   "files": [
     {
