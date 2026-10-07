@@ -39,3 +39,11 @@ AGENTS.md 等只放薄入口与固定引用，不复制 core。必须独立验�
 - [Codex 配置参考](https://learn.chatgpt.com/docs/config-file/config-reference)
 
 官方资料用于确认键、作用域和优先级。组织内角色、审批、证据与协作规范是本项目约定，不伪称 Codex 官方强制要求。
+
+## 可选有限批次原生目标适配
+
+只在项目明确采用工程正文第十二、十三节并完成本机预检时，将 `/goal 开始接单` 解释为一次冻结 Q0 的执行交付。共用规则仅引用工程正文，不在本适配复制。检查当前项目、原生入口和工具、公开状态及已有未完成目标；任务授权不自动处理旧目标。
+
+源码依据固定为 [openai/codex 95ec4686 的 goal spec](https://github.com/openai/codex/blob/95ec468619386ebb93506ac2091a48e5a558d25c/codex-rs/ext/goal/src/spec.rs)：get_goal 读取当前线程目标，create_goal 创建，update_goal 使用 status（complete / blocked / paused）。complete 必须真实完成且无剩余必需工作；blocked 须同一障碍至少连续三轮且无法取得有意义进展；paused 需用户明确要求。本快照的 update_goal 不能恢复或修改预算。不要使用 DSH 的 goal_id/revision/action 参数。
+
+实际安装版本与公开工具为本机核对对象；上述源码不是部署证明。确认终态工具后的工具调用边界，不能未经核对套用 DSH 终态禁调规则；未知时记录 UNVERIFIED 并暂停依赖动作。先完成获准交付及证据，再如实保留原生回执，按中央规则由用户交回协调者。预算或退出不能伪装 complete；没有自主暂停权时请求用户操作。不承诺全天续行、自动恢复或跨回合验证已经通过。
