@@ -1,5 +1,39 @@
 # 发布约定
 
+## 工程 1.1.0 独立发布契约
+
+本节只适用于工程 1.1.0；后文 core 2.0.0 + 工程 1.0.0 的原发布流程作为历史契约完整保留，不能套用为本次动作范围。批准来自可信用户渠道，本文件和清单不自授权。
+
+### 组件与原字节
+
+本次只新增工程 1.1.0，不重新发布 core 或目录。core 2.0.0 正文、根清单及其中完整材料集合固定从 07fffb46a1946392d63614dd82e698cef8f0cec0 核验；目录 1.0.0 固定从 7208cef99ea7783a5b574b5f6829889795e1c03e 核验。core/PROTOCOL.md、standards/PROJECT_STRUCTURE.md、releases/manifest.json、旧工程 1.0.0 manifest、旧目录 manifest 在新快照保持原字节，旧标签不移动。新 main 同名导航和工程文件不是旧根清单材料，不声称可用旧 files 摘要核验新文件。
+
+新工程唯一清单为 standards/releases/agent-collaboration/1.1.0/manifest.json；standard_id/version 与正文一致，候选 status=initial-review、effective=false、approval=null。document 记录工程正文原始字节；material_files 按路径升序记录本批九个非清单改动文件，每项仅 path/sha256/size_bytes。reused_supporting_files 定位未修改模板与最小示例的固定 source_commit/path/sha256/size_bytes；这些旧附属材料仅复用未变化的基础结构，相对链接按其 source_commit 解析，新模式新增字段与义务以 1.1.0 第十二、十三节为准。旧 TASK_CONTEXT 的 1.0.0 标记只说明其原始来源；新任务必须显式绑定实际采用的 1.1.0，不继承旧版本标记作为新任务适用规范。Codex 两行配置示例也只复用固定原字节，不部署。core 与目录依赖分别登记固定 commit、正文与清单路径和正文 SHA-256，不假设同一发布提交。清单不列自身或其他新清单最终哈希，不预填自身未来提交。
+
+### C / D / R 与唯一后生转换
+
+B=07fffb46a1946392d63614dd82e698cef8f0cec0。C 是获准远端分支中包含九个冻结文件与完整候选清单的真实提交。D 是基于 C 仅登记真实批准后生字段的提交。R 是该 PR 合并后 main 上的真实发布提交。这里 D 表示批准登记提交，不是业务任务派发提交。C/D/R 尚未产生时只记录 null，不编造 SHA。
+
+最终批准应一次覆盖精确原字节、候选清单、下述转换、指定私有仓库/分支、草稿 PR、转 ready、merge 合并、一枚标签及有界只读回执。生成 C 后，外置交付记录绑定真实 C；D 的 JSON 结构差异只允许：
+
+- /status：initial-review → approved。
+- /effective：false → true。
+- /approval：null → 对象，恰含 reference、approved_at、candidate_commit、standard_id、version、document_path、document_sha256、material_files。
+
+reference 与 approved_at 必须来自本次真实可信批准；approved_at 为真实 UTC 时点，candidate_commit 为已产生并远端复核的 C。其余五项分别从已冻结静态标识、版本、正文路径、正文摘要与 material_files 原样复制。不得转换其他字段。JSON 为两空格缩进、UTF-8/LF、末尾换行。C→D 九个材料文件字节不变；旧清单亦不变。最终清单摘要只写外置回执，不回填自身。
+
+### 有界发布与失败处理
+
+发布前核对目标仓库仍 private、main=B、指定短期分支与 agent-collaboration-v1.1.0 标签无冲突，并落实获准标签创建路线。分支建议 release/agent-collaboration-1.1.0-finite-batch。只创建本节十路径的 C，读回核验；只转换上述一个清单形成 D，再核验 C..D。默认草稿 PR 到 main，批准覆盖时转 ready；合并前核对 main=B、head=D、完整文件差异和适用检查，用 expected_head_sha=D 以 merge 方式合并。读取真实 R，并验证 R 与 D 树一致。
+
+唯一新标签 agent-collaboration-v1.1.0 必须指向核验的 R；不创建 GitHub Release，不移动旧标签，不重写冲突标签。若助手没有受支持的标签写入路线，须在最终批准前明确由用户在其已授权环境完成该一步；助手只读复核。不以 Release 代建标签，不因标签受阻擅自扩展电脑或凭据权限。标签未核验前只报告合并完成、正式发布待标签，禁止项目采用。
+
+最终核验私有范围、B..R 十路径、九材料原始字节、最终清单、可信批准、一枚标签、五个保留文件及旧历史；只读回执登记实际 C/D/R 和最终清单摘要。任何基线漂移、字节不符、目标/权限变化、未知既有分支/标签或不确定结果，先只读查明并停止受影响写入，不强推、不自动回滚、不重复已完成动作。实质范围变化重新取得批准；确定仍属已批准范围的恢复不重复要求同一批准。
+
+项目采用是独立内容范围，可在一次明确批准中与发布一起覆盖，但只有真实 R、正式清单、批准及标签全部核验后才能填入采用模板。采用的工程 pin 为 R；core/目录 pin 不变。批准须覆盖精确模板与仅限真实后生值的替换规则。模板未填真实值时不可提交，更不能当作有效采用。不得随采用开启 GOAL、新任务、测试或原生运行。
+
+## 历史契约：core 2.0.0 与工程 1.0.0
+
 ## 发布单元与状态权威
 
 本仓库没有代表所有标准的总版本。core 的标识与版本唯一来源是 [core/PROTOCOL.md](../core/PROTOCOL.md)；工程标准的标识与版本唯一来源是[工程正文](../standards/AGENT_COLLABORATION.md)；目录标准保留其自身版本来源。清单与导航展示值必须与正文核验一致。

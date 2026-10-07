@@ -6,18 +6,21 @@
 
 | 单元 | 标识 | 本快照正文版本 | 版本唯一来源 | 状态与材料清单 |
 | --- | --- | --- | --- | --- |
-| 通用对话 | general-collaboration-protocol | 2.0.0 | [core 正文](core/PROTOCOL.md) | [根清单](releases/manifest.json) |
-| 工程协作 | agent-engineering-collaboration | 1.0.0 | [工程正文](standards/AGENT_COLLABORATION.md) | [独立清单](standards/releases/agent-collaboration/1.0.0/manifest.json) |
+| 通用对话 | general-collaboration-protocol | 2.0.0 | [core 正文](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/core/PROTOCOL.md) | [根清单](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/releases/manifest.json) |
+| 工程协作 | agent-engineering-collaboration | 1.1.0 | [工程正文](standards/AGENT_COLLABORATION.md) | [独立清单](standards/releases/agent-collaboration/1.1.0/manifest.json) |
 | 目录与版本管理 | project-structure-and-versioning | 1.0.0 | [目录正文](standards/PROJECT_STRUCTURE.md) | [原独立清单](standards/releases/project-structure/1.0.0/manifest.json) |
 
 没有单一“仓库总版本”。两行 Codex 偏好与模板是逐文件固定的附属材料，不另设版本权威。core 2.0.0 的兼容契约随其精确材料批准，不追认 core 1.0.0 已承诺该契约。旧合规流程可能需调整原始字节核验、并发与历史证据处理；仅保留旧条文不证明完全兼容。工程标准采用仍由各项目决定。
+
+core 2.0.0 及其根清单固定从 [原发布 07fffb46](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/07fffb46a1946392d63614dd82e698cef8f0cec0) 读取。工程 1.1.0 独立发布；旧根清单的 files/related_standards 保留旧发布事实，不是新 main 的实时树或 1.1.0 批准。新增有限批次与机器证据要求仅对显式选用者生效；不改变旧 1.0.0 工作流。
 
 ## 结构
 
 - [AGENTS.md](AGENTS.md) 与 [CLAUDE.md](CLAUDE.md)：薄加载入口
 - [adapters/README.md](adapters/README.md)：接入与缓存契约、运行验证边界
+- [DSH 接入说明](adapters/dsh/README.md)：有限批次原生权限及终态交付顺序
 - [Codex 接入说明](adapters/codex/README.md)及[两行配置示例](adapters/codex/config.toml.example)：不自动安装
-- [项目模板](templates/project-spec.md)、[工程任务模板](templates/task-context.md)、[最小示例与唯一 A01–A16 场景](templates/MINIMAL_EXAMPLES.md)
+- [项目模板](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/project-spec.md)、[工程任务模板](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/task-context.md)、[最小示例与唯一 A01–A16 场景](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/MINIMAL_EXAMPLES.md)
 - [本仓库实施说明](projects/rules-repository/PROJECT_SPEC.md)：稳定维护职责与流程
 - [发布约定](releases/README.md)、[内容变更记录](CHANGELOG.md)、[验收要求](ACCEPTANCE.md)
 - [.gitignore](.gitignore)：降低误纳入风险，不是访问控制

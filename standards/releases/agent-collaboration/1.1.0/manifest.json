@@ -1,0 +1,106 @@
+{
+  "standard_id": "agent-engineering-collaboration",
+  "version": "1.1.0",
+  "status": "initial-review",
+  "effective": false,
+  "document": {
+    "path": "standards/AGENT_COLLABORATION.md",
+    "sha256": "b052b73a546c212bf394328f8e505cfa788087c42d0389f2d9d52a8bffcbc8be",
+    "size_bytes": 35812,
+    "encoding": "UTF-8",
+    "line_endings": "LF"
+  },
+  "material_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "32f1f0ac64f88787300de98f6e2a5fa081c9908feb8f8cc9cbe7bc1eb73c67eb",
+      "size_bytes": 1535
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "3a3f5ad1689e11be3ebb2c1e76ae9795aa9718c60b0d27b9db15db01ceda9db2",
+      "size_bytes": 3255
+    },
+    {
+      "path": "README.md",
+      "sha256": "cbfc6d4d0928c985d087549c0433a07c6dd2014bb2351293b2a426f9a526d63d",
+      "size_bytes": 5570
+    },
+    {
+      "path": "adapters/README.md",
+      "sha256": "1d3b6fd2cc17d50e3afc92eb95a93d4844f20ab78f213611a4a3a4a50c88c7cd",
+      "size_bytes": 3301
+    },
+    {
+      "path": "adapters/codex/README.md",
+      "sha256": "b87f987c6197a6578bec7450f213c9cc7d65de2cc8bd779e3eaa97f197879a76",
+      "size_bytes": 4821
+    },
+    {
+      "path": "adapters/dsh/README.md",
+      "sha256": "9f65372e0139404735bc78cba4f4e6b92aa616ae6e8203c6d59211992c270365",
+      "size_bytes": 2872
+    },
+    {
+      "path": "projects/rules-repository/PROJECT_SPEC.md",
+      "sha256": "5376d158d98594774d69118c5d34f0b529a17bb2acffedddf87817b12b1ff39d",
+      "size_bytes": 3688
+    },
+    {
+      "path": "releases/README.md",
+      "sha256": "7e5ba1a6e4d92e83f1bd3c75e0e7d8c688a1142dfb9102d6b0d084e28294394b",
+      "size_bytes": 17375
+    },
+    {
+      "path": "standards/AGENT_COLLABORATION.md",
+      "sha256": "b052b73a546c212bf394328f8e505cfa788087c42d0389f2d9d52a8bffcbc8be",
+      "size_bytes": 35812
+    }
+  ],
+  "reused_supporting_files": [
+    {
+      "path": "templates/task-context.md",
+      "sha256": "aa517f9e40a86d0f902c4699fa7b6517f4f78b5b2782ca3dfeff709c3ae3833b",
+      "size_bytes": 8306,
+      "source_commit": "07fffb46a1946392d63614dd82e698cef8f0cec0"
+    },
+    {
+      "path": "templates/project-spec.md",
+      "sha256": "b7b6c00d679d4fc6ce6af6900c710f85ed6b3a3a7047f3650ecb708956c97382",
+      "size_bytes": 1791,
+      "source_commit": "07fffb46a1946392d63614dd82e698cef8f0cec0"
+    },
+    {
+      "path": "templates/MINIMAL_EXAMPLES.md",
+      "sha256": "ce9119db2bc096787f6b349961b6ea4843cce8ce52e331b53e06880e1abfc0f3",
+      "size_bytes": 12751,
+      "source_commit": "07fffb46a1946392d63614dd82e698cef8f0cec0"
+    },
+    {
+      "path": "adapters/codex/config.toml.example",
+      "sha256": "d07a1b4ad2cb84d293d1700819004488b4c17dcbd40e21ca7681e4e486462e45",
+      "size_bytes": 55,
+      "source_commit": "07fffb46a1946392d63614dd82e698cef8f0cec0"
+    }
+  ],
+  "target_repository": "Karlsen9527/karlsen-ai-collaboration-rules",
+  "target_tag": "agent-collaboration-v1.1.0",
+  "manifest_path": "standards/releases/agent-collaboration/1.1.0/manifest.json",
+  "referenced_general_rules": {
+    "standard_id": "general-collaboration-protocol",
+    "version": "2.0.0",
+    "commit": "07fffb46a1946392d63614dd82e698cef8f0cec0",
+    "path": "core/PROTOCOL.md",
+    "sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
+    "manifest_path": "releases/manifest.json"
+  },
+  "referenced_project_structure": {
+    "standard_id": "project-structure-and-versioning",
+    "version": "1.0.0",
+    "commit": "7208cef99ea7783a5b574b5f6829889795e1c03e",
+    "path": "standards/PROJECT_STRUCTURE.md",
+    "sha256": "01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177",
+    "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json"
+  },
+  "approval": null
+}
