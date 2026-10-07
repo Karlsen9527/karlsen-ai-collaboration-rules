@@ -1,0 +1,44 @@
+{
+  "standard_id": "agent-engineering-collaboration",
+  "version": "1.0.0",
+  "status": "initial-review",
+  "effective": false,
+  "document": {
+    "path": "standards/AGENT_COLLABORATION.md",
+    "sha256": "65cf7f18e4f8b820a3f9c3cd9e6e4f1363f57850385b3297a9c4d4b018e4620b",
+    "size_bytes": 23693,
+    "encoding": "UTF-8",
+    "line_endings": "LF"
+  },
+  "supporting_files": [
+    {
+      "path": "templates/MINIMAL_EXAMPLES.md",
+      "sha256": "ce9119db2bc096787f6b349961b6ea4843cce8ce52e331b53e06880e1abfc0f3",
+      "size_bytes": 12751
+    },
+    {
+      "path": "templates/task-context.md",
+      "sha256": "aa517f9e40a86d0f902c4699fa7b6517f4f78b5b2782ca3dfeff709c3ae3833b",
+      "size_bytes": 8306
+    }
+  ],
+  "target_repository": "Karlsen9527/karlsen-ai-collaboration-rules",
+  "target_tag": "agent-collaboration-v1.0.0",
+  "manifest_path": "standards/releases/agent-collaboration/1.0.0/manifest.json",
+  "referenced_general_rules_version": "2.0.0",
+  "referenced_general_rules": {
+    "path": "core/PROTOCOL.md",
+    "sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
+    "manifest_path": "releases/manifest.json"
+  },
+  "referenced_project_structure": {
+    "standard_id": "project-structure-and-versioning",
+    "version": "1.0.0",
+    "commit": "7208cef99ea7783a5b574b5f6829889795e1c03e",
+    "path": "standards/PROJECT_STRUCTURE.md",
+    "sha256": "01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177",
+    "target_tag": "project-structure-v1.0.0",
+    "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json"
+  },
+  "approval": null
+}
