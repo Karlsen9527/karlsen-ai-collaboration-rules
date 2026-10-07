@@ -1,0 +1,26 @@
+{
+  "standard_id": "project-structure-and-versioning",
+  "version": "1.0.0",
+  "status": "approved",
+  "effective": true,
+  "document": {
+    "path": "standards/PROJECT_STRUCTURE.md",
+    "sha256": "01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177",
+    "size_bytes": 34233,
+    "encoding": "UTF-8",
+    "line_endings": "LF"
+  },
+  "target_repository": "Karlsen9527/karlsen-ai-collaboration-rules",
+  "target_tag": "project-structure-v1.0.0",
+  "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json",
+  "referenced_general_rules_version": "1.0.0",
+  "approval": {
+    "reference": "approval-project-structure-v1.0.0-20261007-01ec4306",
+    "standard_id": "project-structure-and-versioning",
+    "version": "1.0.0",
+    "document_path": "standards/PROJECT_STRUCTURE.md",
+    "document_sha256": "01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177",
+    "approved_at": "2026-10-07T04:59:51Z"
+  },
+  "published_at": "2026-10-07T05:02:15Z"
+}
