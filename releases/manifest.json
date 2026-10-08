@@ -1,104 +1,67 @@
 {
   "protocol_id": "general-collaboration-protocol",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "status": "approved",
   "effective": true,
   "protocol_path": "core/PROTOCOL.md",
-  "protocol_sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
+  "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
   "hash_algorithm": "sha256",
-  "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; neither manifest is included",
-  "summary": "2.0.0 内容：保留 R001–R021 并补充可核验证据、并发与历史边界，定义规范兼容契约；关联独立工程协作标准 1.0.0、任务模板及 Codex 偏好材料；不自动部署或迁移。",
+  "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
+  "summary": "3.0.0 仅补充 R014 主动进度说明：当前动作、下一步责任、有依据的 ETA、汇报节点与明显延期更新；按 2.0.0 兼容契约归 MAJOR。不自动迁移项目或部署运行能力。",
   "approved_release": {
-    "version": "2.0.0",
-    "protocol_sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
-    "approval_reference": "approval-core-2.0.0-agent-collaboration-1.0.0-20261007",
-    "candidate_commit": "d6938585653d580e6eb0d1112641f04df95c5b4b",
-    "approved_on": "2026-10-07"
+    "version": "3.0.0",
+    "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
+    "approval_reference": "Sentinel_fbcad1c2b1c48191bfda470e1e3b9fd7",
+    "candidate_commit": "f158c15df6c87d15e6b284a78c7e688bf38d9921",
+    "approved_on": "2026-10-08"
   },
-  "target_tag": "core-v2.0.0",
+  "target_tag": null,
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "5ff5ca11189607968a60c04134b778f0aa3310b2d8acb1b079d9bbb28193c886",
-      "size_bytes": 3280
+      "sha256": "b8ce4d8c4b17c87573ec5817dd17d7316e0350ecaeb578062061dd2169dfa462",
+      "size_bytes": 5156
     },
     {
       "path": "AGENTS.md",
-      "sha256": "534e490b2548a7afa733135c69818b9510cf7c0671245b4c7681c1fd296f1555",
-      "size_bytes": 1034
+      "sha256": "8fb88d96e3ad24fe015fc0bb9b426fbde3aa3d4170b4848bd08a7d5a4d4817cd",
+      "size_bytes": 1703
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "3b715654e2c91eb2be1f9b2feff3b5c8541a5dbed1918bf20ccbbf24cd8d1ded",
-      "size_bytes": 2498
-    },
-    {
-      "path": "CLAUDE.md",
-      "sha256": "ec8c76d1075f281c6e73a8abcccbad78250e47031c757b3e2203b3672f499647",
-      "size_bytes": 653
+      "sha256": "32116477bfc3ef6c3d32236c16491f206cc83121ff35b0ad71fabdfca351c7fa",
+      "size_bytes": 4122
     },
     {
       "path": "README.md",
-      "sha256": "25935a0abef0689a353dfcf5892698d5845c3b123bbc0598bccfd0e2600ea18c",
-      "size_bytes": 4522
-    },
-    {
-      "path": "adapters/README.md",
-      "sha256": "8fa365b26d5b8ffc5035748eec8cd60e3e29ec19369edaecafea0ad7a240f339",
-      "size_bytes": 2689
-    },
-    {
-      "path": "adapters/codex/README.md",
-      "sha256": "8e065950acd6e9a0b3ee29a0a0597741b8db528ac3eb6e264999cc60ae900b8e",
-      "size_bytes": 3388
-    },
-    {
-      "path": "adapters/codex/config.toml.example",
-      "sha256": "d07a1b4ad2cb84d293d1700819004488b4c17dcbd40e21ca7681e4e486462e45",
-      "size_bytes": 55
+      "sha256": "2697b8f062c04c37f4fb3a9d99bf96a18c040769336eb38dc3bf4d30e63a0f15",
+      "size_bytes": 5753
     },
     {
       "path": "core/PROTOCOL.md",
-      "sha256": "b50228e10ec818e27766be328b7cbec2b893b9711dac42059d8aa1067fcb6a17",
-      "size_bytes": 13502
+      "sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
+      "size_bytes": 14227
     },
     {
       "path": "projects/rules-repository/PROJECT_SPEC.md",
-      "sha256": "6c914526fd5ef1aac5acb2d68cece6146ed05790509e2afe8d74be7578310fb3",
-      "size_bytes": 3565
+      "sha256": "ebec0d6ac66b9e67317f026e5668491620b0e4b4d5f5b4396b2735575d3e86b9",
+      "size_bytes": 3988
     },
     {
       "path": "releases/README.md",
-      "sha256": "1ec8bf643bb627415265309ddc53566dc4035dec94eea4a156ad2a025dafe4d6",
-      "size_bytes": 12105
-    },
-    {
-      "path": "standards/AGENT_COLLABORATION.md",
-      "sha256": "65cf7f18e4f8b820a3f9c3cd9e6e4f1363f57850385b3297a9c4d4b018e4620b",
-      "size_bytes": 23693
-    },
-    {
-      "path": "templates/MINIMAL_EXAMPLES.md",
-      "sha256": "ce9119db2bc096787f6b349961b6ea4843cce8ce52e331b53e06880e1abfc0f3",
-      "size_bytes": 12751
-    },
-    {
-      "path": "templates/project-spec.md",
-      "sha256": "b7b6c00d679d4fc6ce6af6900c710f85ed6b3a3a7047f3650ecb708956c97382",
-      "size_bytes": 1791
-    },
-    {
-      "path": "templates/task-context.md",
-      "sha256": "aa517f9e40a86d0f902c4699fa7b6517f4f78b5b2782ca3dfeff709c3ae3833b",
-      "size_bytes": 8306
+      "sha256": "97bc1495801808e7c232685999f78019c72f9e5b0a9409a19cd5f9d7c3d3c35a",
+      "size_bytes": 22242
     }
   ],
   "related_standards": [
     {
       "standard_id": "agent-engineering-collaboration",
-      "version": "1.0.0",
-      "manifest_path": "standards/releases/agent-collaboration/1.0.0/manifest.json",
-      "target_tag": "agent-collaboration-v1.0.0"
+      "version": "1.1.0",
+      "commit": "bfc785b7c45a11cc39cf0a6374349ca5a92ffe01",
+      "path": "standards/AGENT_COLLABORATION.md",
+      "sha256": "b052b73a546c212bf394328f8e505cfa788087c42d0389f2d9d52a8bffcbc8be",
+      "manifest_path": "standards/releases/agent-collaboration/1.1.0/manifest.json",
+      "target_tag": "agent-collaboration-v1.1.0"
     },
     {
       "standard_id": "project-structure-and-versioning",
@@ -106,6 +69,7 @@
       "commit": "7208cef99ea7783a5b574b5f6829889795e1c03e",
       "path": "standards/PROJECT_STRUCTURE.md",
       "sha256": "01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177",
+      "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json",
       "target_tag": "project-structure-v1.0.0"
     }
   ]
