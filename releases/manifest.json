@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "3.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "3.0.0 仅补充 R014 主动进度说明：当前动作、下一步责任、有依据的 ETA、汇报节点与明显延期更新；按 2.0.0 兼容契约归 MAJOR。不自动迁移项目或部署运行能力。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "3.0.0",
+    "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
+    "approval_reference": "Sentinel_fbcad1c2b1c48191bfda470e1e3b9fd7",
+    "candidate_commit": "f158c15df6c87d15e6b284a78c7e688bf38d9921",
+    "approved_on": "2026-10-08"
+  },
   "target_tag": null,
   "files": [
     {
