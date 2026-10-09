@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "4.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "069df8edfc37fefe08439b40e71bcb9250b3e775df6d477728d1e374281cfbe0",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "4.0.0 重整为用户与谢多多的 12 节轻量协作正文；执行者默认按完整任务路线和项目约束执行，不加载 core 或聊天菜单。按 MAJOR 发布；必要配套摘要仅证明发布完整性，不声称用户逐字审核全部配套。不迁移项目、升级独立标准依赖或部署运行能力。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "4.0.0",
+    "protocol_sha256": "069df8edfc37fefe08439b40e71bcb9250b3e775df6d477728d1e374281cfbe0",
+    "approval_reference": "Sentinel_0440781c20e48191aaf9b19f27c958d9",
+    "candidate_commit": "7cb00e218739e003f9c58c15fdc0f4af696567d2",
+    "approved_on": "2026-10-09"
+  },
   "target_tag": null,
   "files": [
     {
