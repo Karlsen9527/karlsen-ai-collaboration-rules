@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "5.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "35346cdbd928263f51c73bfaf8d7140d02dccfcce224cc33026609a5be34a7c6",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "5.0.0 新增总纲并衔接第 4、5 节：每次任务回复简短交代当前工作、预计多久、是否主动汇报，阶段决策使用短 1/2/3 菜单，重读优先核对四项核心。按 MAJOR 发布；必要配套摘要仅证明完整性，不迁移业务项目或部署运行能力。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "5.0.0",
+    "protocol_sha256": "35346cdbd928263f51c73bfaf8d7140d02dccfcce224cc33026609a5be34a7c6",
+    "approval_reference": "Sentinel_4258c9f72a7c81919f9cf49f43f35f25",
+    "candidate_commit": "9a93d6252959d8df3e42c1f9c3d91d8c1865868d",
+    "approved_on": "2026-10-09"
+  },
   "target_tag": null,
   "files": [
     {
