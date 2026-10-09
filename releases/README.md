@@ -1,5 +1,25 @@
 # 发布约定
 
+## core 4.0.0 轻量发布约定
+
+本节只适用于 4.0.0；以下 3.0.0 及更早段落按原文保留，只约束各自历史发布，不把八文件全摘要预批准、标签或其他旧规模套用于本次。4.0.0 的适用对象和旧合规流程改变，归 MAJOR。
+
+用户批准精确版本 4.0.0、core 原始字节 SHA-256 069df8edfc37fefe08439b40e71bcb9250b3e775df6d477728d1e374281cfbe0（7058 bytes），及规范仓库必要清单、变更记录和入口说明的有界更新。正文不得改变；正文变化须重算并补批。根清单 files 记录配套的发布完整性，不声称用户逐字审核了每个配套文件。
+
+基线 B=6cffa0b3b45aa870316a34dedfab4e656b604b3b。本次最多修改 core/PROTOCOL.md、releases/manifest.json、AGENTS.md、CLAUDE.md、README.md、CHANGELOG.md、ACCEPTANCE.md、releases/README.md、projects/rules-repository/PROJECT_SPEC.md、adapters/README.md、adapters/codex/README.md、adapters/dsh/README.md。不得改独立标准正文或清单、模板、模型配置和业务仓库；不新增自动化。
+
+在获准短期分支形成候选提交 C：version=4.0.0、status=initial-review、effective=false、approved_release=null、target_tag=null；files 按路径升序记录本次所有非清单改动文件的原始字节 SHA-256 和大小，不含清单自身。related_standards 保留既有固定引用，不重新批准或升级工程 1.1.0 的 core 2.0.0 依赖。
+
+读回 C 核验后，P 仅把根清单 /status 转为 approved、/effective 转为 true、/approved_release 转为恰含 version、protocol_sha256、approval_reference、candidate_commit、approved_on 的对象。前两项复制固定版本与正文摘要；批准引用与 UTC 日期取自真实批准，candidate_commit 只填已产生并核验的真实 C。其他字段及材料字节不变；JSON 两空格缩进、UTF-8/LF、末尾换行。仓库不保存私人批准原文。
+
+发布前核对 private、main=B 及分支状态。按已批准范围创建 PR、审阅并合并；合并前核验 main=B、head=P、白名单差异和字节，以 expected_head_sha=P 按 merge 合并，读取真实 R 并核验 R 与 P 树一致。本次以固定 R、同提交正文与根清单、正文哈希和可信批准定位，不创建标签或 GitHub Release。基线、字节、权限或范围实质变化时先停止受影响写入并查明；不强推或重写历史。
+
+回执记录真实 C/P/R、PR、摘要、批准引用和未验证项；核验后才报告发布完成。发布仅更新规范仓库，不证明业务项目迁移、客户端旧绑定解除或同步、goal 和自动在线能力已部署；这些实施须另有授权与实际证据。
+
+## 历史范围说明
+
+以下各版本原发布记录完整保留。段落中的“本次”“当前”和候选回退均只指该历史发布。
+
 ## core 3.0.0 独立发布契约
 
 本节仅适用于本次 R014 主动进度说明的 core 3.0.0 发布；下文历史契约完整保留，不将其文件数量、标签或动作套用于本次。此次八路径范围不成为未来修订的固定要求。新义务要求有后续工作的答复主动交代预计时间和汇报节点、在明显延期时更新，旧合规做法需调整，按已批准的 core 2.0.0 兼容契约归 MAJOR。
