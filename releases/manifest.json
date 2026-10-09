@@ -1,56 +1,70 @@
 {
   "protocol_id": "general-collaboration-protocol",
-  "version": "3.0.0",
-  "status": "approved",
-  "effective": true,
+  "version": "4.0.0",
+  "status": "initial-review",
+  "effective": false,
   "protocol_path": "core/PROTOCOL.md",
-  "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
+  "protocol_sha256": "069df8edfc37fefe08439b40e71bcb9250b3e775df6d477728d1e374281cfbe0",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
-  "summary": "3.0.0 仅补充 R014 主动进度说明：当前动作、下一步责任、有依据的 ETA、汇报节点与明显延期更新；按 2.0.0 兼容契约归 MAJOR。不自动迁移项目或部署运行能力。",
-  "approved_release": {
-    "version": "3.0.0",
-    "protocol_sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
-    "approval_reference": "Sentinel_fbcad1c2b1c48191bfda470e1e3b9fd7",
-    "candidate_commit": "f158c15df6c87d15e6b284a78c7e688bf38d9921",
-    "approved_on": "2026-10-08"
-  },
+  "summary": "4.0.0 重整为用户与谢多多的 12 节轻量协作正文；执行者默认按完整任务路线和项目约束执行，不加载 core 或聊天菜单。按 MAJOR 发布；必要配套摘要仅证明发布完整性，不声称用户逐字审核全部配套。不迁移项目、升级独立标准依赖或部署运行能力。",
+  "approved_release": null,
   "target_tag": null,
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "b8ce4d8c4b17c87573ec5817dd17d7316e0350ecaeb578062061dd2169dfa462",
-      "size_bytes": 5156
+      "sha256": "1170ef5bae8575cc6e9babd04ec5b7e22041538236adf6e2ad22b6a5d72c7c47",
+      "size_bytes": 6593
     },
     {
       "path": "AGENTS.md",
-      "sha256": "8fb88d96e3ad24fe015fc0bb9b426fbde3aa3d4170b4848bd08a7d5a4d4817cd",
-      "size_bytes": 1703
+      "sha256": "53fcfc6e72a32dfc2ea7da551933615f2d98d68ac7ca9fbf660be770b52e16ef",
+      "size_bytes": 1555
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "32116477bfc3ef6c3d32236c16491f206cc83121ff35b0ad71fabdfca351c7fa",
-      "size_bytes": 4122
+      "sha256": "d9a12f11771683008d8864a3fd99a76f127b94f693817dd400bdb5100278e656",
+      "size_bytes": 4999
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "35515e85a6d39f42035a2d6a1197ff139a2617206cbde72bc872fe658e02838d",
+      "size_bytes": 726
     },
     {
       "path": "README.md",
-      "sha256": "2697b8f062c04c37f4fb3a9d99bf96a18c040769336eb38dc3bf4d30e63a0f15",
-      "size_bytes": 5753
+      "sha256": "b9b39a96bbb4069d4085284c36d9677731202a52a4d3e8a94a15c294d2ccfb09",
+      "size_bytes": 6332
+    },
+    {
+      "path": "adapters/README.md",
+      "sha256": "0626db630f5267751f91e39d67f36ef2dcb67a7c6435f94e3bba7d40286ffc13",
+      "size_bytes": 3846
+    },
+    {
+      "path": "adapters/codex/README.md",
+      "sha256": "9cafb883fcfafb503a6e8d4cca4809a7e607fd6277502bbcdddc1aaff1e2d422",
+      "size_bytes": 5457
+    },
+    {
+      "path": "adapters/dsh/README.md",
+      "sha256": "854bd56e8811adf006a21d1f6beb6490255048b7c2408ff34bf4f1a2443bcdad",
+      "size_bytes": 3397
     },
     {
       "path": "core/PROTOCOL.md",
-      "sha256": "076f33adfdff43e2ef852046b8d92fe92808d8137bff8e6284022be19a6cae1c",
-      "size_bytes": 14227
+      "sha256": "069df8edfc37fefe08439b40e71bcb9250b3e775df6d477728d1e374281cfbe0",
+      "size_bytes": 7058
     },
     {
       "path": "projects/rules-repository/PROJECT_SPEC.md",
-      "sha256": "ebec0d6ac66b9e67317f026e5668491620b0e4b4d5f5b4396b2735575d3e86b9",
-      "size_bytes": 3988
+      "sha256": "0f044ec7f3394c9abddff6d7180a6d9108544abadf4132e15dec54dc20674ad3",
+      "size_bytes": 4155
     },
     {
       "path": "releases/README.md",
-      "sha256": "97bc1495801808e7c232685999f78019c72f9e5b0a9409a19cd5f9d7c3d3c35a",
-      "size_bytes": 22242
+      "sha256": "f26afdceee2b81cceac0e61f3d00cd9546eaf3953896054db304f393a162baa4",
+      "size_bytes": 25081
     }
   ],
   "related_standards": [
