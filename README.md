@@ -6,13 +6,13 @@
 
 | 单元 | 标识 | 本快照正文版本 | 版本唯一来源 | 状态与材料清单 |
 | --- | --- | --- | --- | --- |
-| 用户与谢多多协作 | general-collaboration-protocol | 5.0.0 | [core 正文](core/PROTOCOL.md) | [根清单](releases/manifest.json) |
+| 用户与谢多多协作 | general-collaboration-protocol | 5.0.1 | [core 正文](core/PROTOCOL.md) | [根清单](releases/manifest.json) |
 | 工程协作 | agent-engineering-collaboration | 1.1.0 | [工程正文](standards/AGENT_COLLABORATION.md) | [独立清单](standards/releases/agent-collaboration/1.1.0/manifest.json) |
 | 目录与版本管理 | project-structure-and-versioning | 1.0.0 | [目录正文](standards/PROJECT_STRUCTURE.md) | [原独立清单](standards/releases/project-structure/1.0.0/manifest.json) |
 
 没有单一“仓库总版本”。两行 Codex 偏好与模板是逐文件固定的附属材料，不另设版本权威。core 2.0.0 的兼容契约随其精确材料批准，不追认 core 1.0.0 已承诺该契约。旧合规流程可能需调整原始字节核验、并发与历史证据处理；仅保留旧条文不证明完全兼容。工程标准采用仍由各项目决定。
 
-本快照 core 5.0.0 在 12 节轻量协作正文前增加总纲，强调每次任务回复交代当前工作、预计多久及是否主动汇报，阶段决策使用每项一句的短 1/2/3 菜单，重读时优先核对四项核心，按兼容契约归 MAJOR。仅约束用户与谢多多；Codex、DSH 等执行者默认不加载、维护 core，也不承担聊天菜单。谢多多负责完整任务路线与集中决策。候选不构成生效；发布状态以根清单和可信批准为准，旧批准不自动撤销。
+本快照 core 5.0.1 仅在总纲首段明确通用规范的修改须有用户明确要求，并区分通用规范与项目规范的适用和变更授权；项目需求、试用反馈和项目修改授权不构成通用规范变更授权。此为既有授权边界的澄清，按兼容契约归 PATCH；其余条文不变。仅约束用户与谢多多；Codex、DSH 等执行者默认不加载、维护 core，也不承担聊天菜单。谢多多负责完整任务路线与集中决策。候选不构成生效；发布状态以根清单和可信批准为准，旧批准不自动撤销。
 
 历史 core 2.0.0 及其根清单固定从 [原发布 07fffb46](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/07fffb46a1946392d63614dd82e698cef8f0cec0) 读取。工程 1.1.0 仍按 [原发布 bfc785b7](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/bfc785b7c45a11cc39cf0a6374349ca5a92ffe01) 及其独立清单核验，固定 core 2.0.0 依赖不变。旧根清单摘要只核验旧发布材料，不校验当前导航文件；新版 core 根清单也不替代工程 1.1.0 的独立批准。有限批次仅对显式选用者适用，不改变旧 1.0.0 工作流。
 

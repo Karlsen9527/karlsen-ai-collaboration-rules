@@ -1,5 +1,17 @@
 # 发布约定
 
+## core 5.0.1 发布约定
+
+本节仅适用于 5.0.1；以下 5.0.0 及更早契约完整保留，其中“本次”“当前”和基线只指各历史发布。本次仅在总纲首段澄清通用规范与项目规范的适用和修改授权边界，既有合规流程不增加义务，归 PATCH；不叠加旧版文件全摘要预批准或标签要求。
+
+用户批准精确版本 5.0.1、core 原始字节 SHA-256 10c579082b84d2eac94b00e9c5106cfcb861da395f192b842292bd0053e93bbf（8232 bytes），及必要发布记录、清单和入口更新。正文不得改变，变化须重算并补批；配套摘要用于发布完整性，不声称用户逐字审核全部配套。
+
+基线 B=d8515369a88d294d4fe9734615ca0baf2b8f9a9b。仅更新 core/PROTOCOL.md、releases/manifest.json、AGENTS.md、CLAUDE.md、README.md、CHANGELOG.md、ACCEPTANCE.md、releases/README.md、projects/rules-repository/PROJECT_SPEC.md、adapters/README.md、adapters/codex/README.md、adapters/dsh/README.md 共 12 路径；独立标准及清单、模板、模型配置和业务项目不变，不新增自动化。
+
+沿用 5.0.0 的 C/P/R 顺序：C 包含固定材料及候选清单，version=5.0.1、status=initial-review、effective=false、approved_release=null、target_tag=null；files 按路径升序机器记录 11 个非清单材料的原始字节 SHA-256 和大小，related_standards 原样保留。核验真实 C 后，P 只转换 /status 为 approved、/effective 为 true、/approved_release 为恰含 version、protocol_sha256、approval_reference、candidate_commit、approved_on 的对象；版本和摘要复制固定值，引用及 UTC 日期来自真实批准，candidate_commit 填已核验的真实 C，其他字段与材料字节不变。JSON 两空格缩进、UTF-8/LF、末尾换行。
+
+核对 private、main=B 和分支状态后，在获准分支创建草稿 PR、转 ready 并按 merge 合并；合并前核验 head=P 及完整范围，用 expected_head_sha=P 操作。读取真实 R，核验 R 与 P 树一致及同提交正文、清单和可信批准；不创建标签或 GitHub Release。实质基线、范围、字节或权限变化先停止受影响写入并查明。回执保留真实 C/P/R、PR、摘要、批准引用和未验证项，不保存私人审批原文；发布不等于业务迁移、客户端同步或运行能力部署。
+
 ## core 5.0.0 发布约定
 
 本节仅适用于 5.0.0；以下 4.0.0 及更早契约完整保留，其中“本次”“当前”和基线只指各历史发布。此次增加总纲及任务回复必遵要求，归 MAJOR；不叠加旧版文件全摘要预批准或标签要求。

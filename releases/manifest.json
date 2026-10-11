@@ -1,76 +1,70 @@
 {
   "protocol_id": "general-collaboration-protocol",
-  "version": "5.0.0",
-  "status": "approved",
-  "effective": true,
+  "version": "5.0.1",
+  "status": "initial-review",
+  "effective": false,
   "protocol_path": "core/PROTOCOL.md",
-  "protocol_sha256": "35346cdbd928263f51c73bfaf8d7140d02dccfcce224cc33026609a5be34a7c6",
+  "protocol_sha256": "10c579082b84d2eac94b00e9c5106cfcb861da395f192b842292bd0053e93bbf",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
-  "summary": "5.0.0 新增总纲并衔接第 4、5 节：每次任务回复简短交代当前工作、预计多久、是否主动汇报，阶段决策使用短 1/2/3 菜单，重读优先核对四项核心。按 MAJOR 发布；必要配套摘要仅证明完整性，不迁移业务项目或部署运行能力。",
-  "approved_release": {
-    "version": "5.0.0",
-    "protocol_sha256": "35346cdbd928263f51c73bfaf8d7140d02dccfcce224cc33026609a5be34a7c6",
-    "approval_reference": "Sentinel_4258c9f72a7c81919f9cf49f43f35f25",
-    "candidate_commit": "9a93d6252959d8df3e42c1f9c3d91d8c1865868d",
-    "approved_on": "2026-10-09"
-  },
+  "summary": "5.0.1 仅在总纲首段澄清：未经用户明确要求严禁修改通用规范；通用规范与项目规范分别适用，项目需求、试用反馈和项目修改授权不构成通用规范变更授权。按 PATCH 发布；其余正文和 12 节结构不变，必要配套摘要只证明发布完整性，不迁移业务项目或部署运行能力。",
+  "approved_release": null,
   "target_tag": null,
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "cc571429cf44c11f5b4272308103d014e7c9eb6019e6debbde10073276c903c9",
-      "size_bytes": 7814
+      "sha256": "a5ff3d86ad0b96cf1094e2c20c8795af078915b5fceb46facf502830c195be13",
+      "size_bytes": 9384
     },
     {
       "path": "AGENTS.md",
-      "sha256": "34c08e78174033ef195ac0f74c993d5a65880df845fdca119476afd26e4df994",
+      "sha256": "8d0aae94f26c498b2b5d5b91b0a0dc923e0832731ea5c6b3e4532966111b6792",
       "size_bytes": 1555
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "c8c035567309d0efb7286fc5835a794d1c1a9a8e8591ba7d144848754181e1c7",
-      "size_bytes": 5744
+      "sha256": "79420c4a28399ad8df395733cb79f3e97284f39cf842f1624f6993d36b31da44",
+      "size_bytes": 6472
     },
     {
       "path": "CLAUDE.md",
-      "sha256": "156f1ffe4871aab42d19101dac9243180c69f885cd37c91d810ea8854eca93f1",
+      "sha256": "57dd222124f88073ad4b91fb3bed36cf58717a7cd5bd6030b07637df398cbf13",
       "size_bytes": 726
     },
     {
       "path": "README.md",
-      "sha256": "ecab4ac869e5a10c1297cd257939c33e18209a318ddae69c42efa9ddada41604",
-      "size_bytes": 6456
+      "sha256": "c83a8b5cf6381b4f850c04ae6d7c4bb160d9c9d135cfd630d721dc89cf7ce7e9",
+      "size_bytes": 6517
     },
     {
       "path": "adapters/README.md",
-      "sha256": "1529f892e69f4a9e9868ad934e42f8296ce42d9664ba1dee19be9cf0dcb3b30e",
+      "sha256": "2e9b0cbd92d824031f03c3a63875a2f823dab84b5f63d3a62cc279fcb5ad2ead",
       "size_bytes": 3846
     },
     {
       "path": "adapters/codex/README.md",
-      "sha256": "8a8a289ea58545424044063b8188f7331f50364a031fe6560c50b80f76acca84",
+      "sha256": "11625aed81822f403df0d0bd21479973e17c3231e1fded5b9df2c9caddcdf43d",
       "size_bytes": 5457
     },
     {
       "path": "adapters/dsh/README.md",
-      "sha256": "88f2762ab5983ffc87378224dea05d2e43f36527d4b55bb417a4eda6a3d51c3a",
+      "sha256": "4fb1da2af99ab2a109259c7125e0c918596f03f52e1817a2349661b23e4a96b3",
       "size_bytes": 3397
     },
     {
       "path": "core/PROTOCOL.md",
-      "sha256": "35346cdbd928263f51c73bfaf8d7140d02dccfcce224cc33026609a5be34a7c6",
-      "size_bytes": 8029
+      "sha256": "10c579082b84d2eac94b00e9c5106cfcb861da395f192b842292bd0053e93bbf",
+      "size_bytes": 8232
     },
     {
       "path": "projects/rules-repository/PROJECT_SPEC.md",
-      "sha256": "3304f0b80bdcd64a7677f050ba4a570d338e2b1589230b017edf72eaf9660192",
+      "sha256": "b212bb0867d54007e5c543113095da67866007b5802db12933dae57796021c8e",
       "size_bytes": 4155
     },
     {
       "path": "releases/README.md",
-      "sha256": "a32b3591222ef12f1ea1b8ccf2cfcc0c74688c853cee79f81ef47e98149669c4",
-      "size_bytes": 27351
+      "sha256": "b6a324f20ee9287b64ca4a05287ddf1b7c1badd21c6f692ce4bdd5ad64b97474",
+      "size_bytes": 29699
     }
   ],
   "related_standards": [
