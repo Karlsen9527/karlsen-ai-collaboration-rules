@@ -1,5 +1,19 @@
 # 发布约定
 
+## core 8.0.0 配套材料维护：两次发送开场口令
+
+本节仅适用于基线 B=d23b63721c8b17fe0f3692897ed5975f711a9d4e 之后的本次配套维护；不修改或重新发布 core 正文，不提升 core 版本。正文仍为 8.0.0、SHA-256 124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda、13636 bytes。原 8.0.0 发布材料与批准固定从 [原快照](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/d23b63721c8b17fe0f3692897ed5975f711a9d4e) 核验，以下原发布、验收和变更区块完整保留；原批准不覆盖本次材料修订。
+
+本次仅修改 templates/new-requirement-opener.md、templates/README.md、README.md、CHANGELOG.md、ACCEPTANCE.md、releases/README.md、releases/manifest.json 共 7 路径。口令与需求分两次发送：先读取并回报版本、完整提交和全文状态，之后等待用户另发需求；收到需求前不主动提问、设计或修改。保留同提交来源、全文与失败保护、main 和项目 pin 边界、需求闭环及执行授权关口。其余文件、历史记录、独立标准、配置和项目 pin 不变。
+
+根清单仍是同快照唯一当前 core 清单。version、protocol_sha256、status、effective、approved_release 等原字段保持原值；其中 approved_release 只定位原 core 发布批准，不证明本次材料已获批准。files 保持原 13 路径，按本快照原始字节重新计算；新增 material_update 对象，恰含 base_commit、paths、status、approval。base_commit 固定为 B；paths 按路径升序明确列出上述 7 个本次允许修改路径，不授权未来更新。候选 status=initial-review、approval=null 表示新材料尚未完成批准登记与发布核验，不得视为已生效；材料发布须另核验 material_update，不得仅凭根 status=approved 判断。
+
+本次使用独立真实材料维护批准，不重用原 8.0.0 发布批准。批准覆盖模板与说明修订、上述必要完整性维护及公开仓库 Karlsen9527/karlsen-ai-collaboration-rules 的有界提交、审阅和发布；摘要用于核验完整性，不声称用户逐字审阅全部配套。短期分支 release/core-8.0.0-two-message-opener 上的 C 含 6 个冻结修改文件与候选根清单。远端读回 C 后，P 仅转换 /material_update/status 为 approved、/material_update/approval 为恰含 reference、approved_at、candidate_commit 的对象：引用及 UTC 时点取本次真实批准，candidate_commit 填已产生并核验的 C。其他字段和全部材料字节保持不变，不预填未来 P/R 或自身摘要。JSON 保持两空格缩进、UTF-8/LF、末尾换行。
+
+写入前核对 public、main=B 和分支无冲突；创建面向 main 的草稿 PR，审查后按已批准范围转 ready。合并前重核 main=B、head=P、7 路径白名单、13 材料摘要及适用检查；以 expected_head_sha=P 按 merge 合并，读取真实 R，核验 R 与 P 树一致、正文原字节、原批准对象和本次材料批准分别对应。回执记录真实 C/P/R、PR、摘要、两次批准的边界和未验证项。
+
+不新增标签、GitHub Release、自动化、部署或项目迁移。基线、范围、字节或权限实质变化先停止受影响写入并查明，不强推、不擅自回滚；未知结果先读回再决定重试。本文不自行授权，远端核验通过前不声称材料发布完成。
+
 ## core 8.0.0 发布约定
 
 本节仅适用于 8.0.0；以下 7.0.0 及更早原区块完整保留，其中标题、状态措辞、“本次”、可见性和基线仅指各自历史版本，不作为本版当前状态。新增完整读取、需求闭环及变更控制等必遵义务，归 MAJOR；沿用 C/P/R，不新增发布体系。当前状态由同提交根清单及可信批准决定，本节不预报批准或发布结果。

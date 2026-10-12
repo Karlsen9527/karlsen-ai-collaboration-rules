@@ -22,7 +22,7 @@
 - [adapters/README.md](adapters/README.md)：接入与缓存契约、运行验证边界
 - [DSH 接入说明](adapters/dsh/README.md)：有限批次原生权限及终态交付顺序
 - [Codex 接入说明](adapters/codex/README.md)及[两行配置示例](adapters/codex/config.toml.example)：不自动安装
-- [通用模板导航](templates/README.md)与[新需求开场口令](templates/new-requirement-opener.md)：加载唯一 core 正文，不复制第二套规则
+- [通用模板导航](templates/README.md)与[新需求开场口令](templates/new-requirement-opener.md)：先单独发送口令，确认完整读完规范后再另发需求；加载唯一 core 正文，不复制第二套规则
 - [项目模板](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/project-spec.md)、[工程任务模板](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/task-context.md)、[最小示例与唯一 A01–A16 场景](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/blob/07fffb46a1946392d63614dd82e698cef8f0cec0/templates/MINIMAL_EXAMPLES.md)
 - [本仓库实施说明](projects/rules-repository/PROJECT_SPEC.md)：稳定维护职责与流程
 - [发布约定](releases/README.md)、[内容变更记录](CHANGELOG.md)、[验收要求](ACCEPTANCE.md)
