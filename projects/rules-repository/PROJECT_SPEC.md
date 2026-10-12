@@ -8,7 +8,7 @@
 
 ## 版本与来源权威
 
-- core：标识 general-collaboration-protocol，版本唯一来源 [core/PROTOCOL.md](../../core/PROTOCOL.md)，本快照为 5.0.1；状态与材料查同一固定提交的根清单及可信批准。候选不构成生效，旧批准不自动撤销。当前 core 仅约束用户与谢多多，执行者默认按完整任务路线和项目约束执行，不加载 core 或聊天菜单。历史 core 2.0.0 与完整原发布材料固定查 07fffb46a1946392d63614dd82e698cef8f0cec0；工程 1.1.0 的 core 依赖仍使用该固定来源，不随当前 core 更新。
+- core：标识 general-collaboration-protocol，版本唯一来源 [core/PROTOCOL.md](../../core/PROTOCOL.md)，本快照为 6.0.0；状态与材料查同一固定提交的根清单及可信批准。候选不构成生效，旧批准不自动撤销。当前 core 仅约束用户与谢多多，执行者默认按完整任务路线和项目约束执行，不加载 core 或聊天菜单。历史 core 2.0.0 与完整原发布材料固定查 07fffb46a1946392d63614dd82e698cef8f0cec0；工程 1.1.0 的 core 依赖仍使用该固定来源，不随当前 core 更新。
 - 工程：标识 agent-engineering-collaboration，版本唯一来源 [工程正文](../../standards/AGENT_COLLABORATION.md)，状态查[独立清单](../../standards/releases/agent-collaboration/1.1.0/manifest.json)；仅任务明确采用时适用。
 - 目录：标识 project-structure-and-versioning，固定 1.0.0 基线 7208cef99ea7783a5b574b5f6829889795e1c03e，路径 standards/PROJECT_STRUCTURE.md，SHA-256 01ec4306eb4b37468ad63e518a9c9a129ade863acfe4fc7538c51c7bd2961177；原清单和标签保留。
 - 历史 core 1.0.0：固定 7115cc9e8c262f6d07c7f89558c1f477593bf8e5，路径 core/PROTOCOL.md，SHA-256 284cae9edb5f41ef88d26dc7ce19e4cf8ab167468e3de0adf04d53879209d8c0；正文与根清单都按该提交读取。
@@ -19,7 +19,7 @@
 
 输入为已确认的规则需求、固定仓库基线和精确审阅材料；输出仅为本任务批准的文档和结构化清单路径。版本、原始字节、链接、JSON、规则编号、场景来源、目录边界和敏感内容依 [ACCEPTANCE.md](../../ACCEPTANCE.md) 检查。共享仓库只保存适合共享的审批引用，真实身份与批准证据保留在可信授权渠道。
 
-发布前必须解决已知工具能力门槛；发布后独立核对私有范围、远端提交、原始字节、本次对应清单及其约定定位。本次 core 5.0.1 不新增标签，以固定发布提交、根清单、正文哈希与可信批准回执定位；历史版本仍按其原标签契约核验。源码提交、PR ready、哈希相同和仓库 approved 文案均不代替用户授权。
+发布前必须解决已知工具能力门槛；发布后独立核对私有范围、远端提交、原始字节、本次对应清单及其约定定位。本次 core 6.0.0 不新增标签，以固定发布提交、根清单、正文哈希与可信批准回执定位；历史版本仍按其原标签契约核验。源码提交、PR ready、哈希相同和仓库 approved 文案均不代替用户授权。
 
 ## 主业务流程
 

@@ -1,5 +1,21 @@
 # 发布约定
 
+## core 6.0.0 发布约定
+
+本节仅适用于 6.0.0；以下 5.0.1 及更早契约完整保留，其中“本次”“当前”和基线只指各历史发布。本次仅调整第 3、5、7 节的指令交付、发布授权边界和完整任务路线；新的指令交付要求使旧合规做法需要调整，归 MAJOR。不叠加历史全摘要预批准或标签要求，不增加其他发布流程。
+
+最终发布须批准的精确对象为版本 6.0.0、core 原始字节 SHA-256 71bb58eb521778cf759bdd00fd1cea8026bb8def4ea762fb28f49d036987ef21（8991 bytes）及下述有界发布范围。准备或锁定候选不构成最终发布批准；只有在可信渠道取得该精确对象与完整发布动作的明确批准后，才可开始远端写入。正文保持逐字冻结，变化须重算并补批；配套摘要只证明完整性，不声称用户逐字审核全部配套。本节不预填批准引用或日期，也不宣称发布已获批或已完成。
+
+基线 B=1cbfa5da09b6ea0f855dd5b9c7268dfa8cf57ae1。仅更新 core/PROTOCOL.md、releases/manifest.json、AGENTS.md、CLAUDE.md、README.md、CHANGELOG.md、ACCEPTANCE.md、releases/README.md、projects/rules-repository/PROJECT_SPEC.md、adapters/README.md、adapters/codex/README.md、adapters/dsh/README.md 共 12 路径。独立工程 1.1.0、目录 1.0.0 及其清单、固定依赖、模板、配置、技能和业务项目不变；不新增自动化，不自动迁移项目，不部署接单或同步能力。
+
+沿用 C/P/R 顺序：在获准短期分支形成 C，包含此固定材料及候选清单，version=6.0.0、status=initial-review、effective=false、approved_release=null、target_tag=null。files 按路径升序记录 11 个非清单材料的原始字节 SHA-256 和大小，不包含清单自身；related_standards 原样保留。当前候选不生成或猜测任何未来 C/P/R。
+
+取得最终发布批准并读回核验真实 C 后，P 只转换根清单的 /status 为 approved、/effective 为 true、/approved_release 为恰含以下五个键的对象：version 固定为 6.0.0；protocol_sha256 固定为上述正文摘要；approval_reference 填最终发布批准的真实、可共享引用；candidate_commit 填已生成并核验的真实 C；approved_on 填该最终批准的真实 UTC 日期（YYYY-MM-DD）。不使用仅授权准备材料的引用，不保存私人审批原文。其他字段和材料字节不变，JSON 两空格缩进、UTF-8/LF、末尾换行。C 引用是 P 对已存在候选的引用，不写 P 或 R 的未来自引用。
+
+最终批准范围须明确包括：在此私有仓库创建一条短期发布分支，提交 C、核验并提交 P、创建面向 main 的草稿 PR、完成审查后转 ready、按 merge 合并并读取真实 R。写入前核对 private、main=B、分支状态及必要工具能力；合并前再次核验 main=B、head=P、完整白名单及材料字节，使用 expected_head_sha=P。合并后核验 R 与 P 树一致及同提交正文、清单和可信批准。不创建标签或 GitHub Release，不强推、不重写历史。基线、范围、字节或权限实质变化时先停止受影响写入并查明。
+
+回执保留真实 C/P/R、PR、摘要、批准引用和未验证项；远端核验通过才报告发布完成。发布不等于业务项目采用、客户端旧绑定解除或同步、运行能力部署。本次不引入技能依赖。
+
 ## core 5.0.1 发布约定
 
 本节仅适用于 5.0.1；以下 5.0.0 及更早契约完整保留，其中“本次”“当前”和基线只指各历史发布。本次仅在总纲首段澄清通用规范与项目规范的适用和修改授权边界，既有合规流程不增加义务，归 PATCH；不叠加旧版文件全摘要预批准或标签要求。
