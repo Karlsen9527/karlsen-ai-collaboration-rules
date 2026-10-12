@@ -19,8 +19,8 @@
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "8b55bc3307702eb59fa38dd12d5c6e16744dfd00c2a86d7f3ee2ff57f363e300",
-      "size_bytes": 15011
+      "sha256": "a10aaa91705dce4705bfd191fc3912f93df43964981447d95ed778ed75237f21",
+      "size_bytes": 16612
     },
     {
       "path": "AGENTS.md",
@@ -29,8 +29,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "a0b45aba7351f698f9e872e9ef3de23080082beb400e6e4f7c485032d73616ab",
-      "size_bytes": 9135
+      "sha256": "db7c7a5810cf714b7594f1269512718501a07038a4881e3d2bdcd395b29945c8",
+      "size_bytes": 9699
     },
     {
       "path": "CLAUDE.md",
@@ -39,8 +39,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "dd91c0c54d6cfd0859e37d58c8b229760f984a24b5052fe01ad64ad353645627",
-      "size_bytes": 7043
+      "sha256": "557b8c5cd1b94365acfa09423f646cb8506859caf817ddfcc7fdd60963a86151",
+      "size_bytes": 7112
     },
     {
       "path": "adapters/README.md",
@@ -69,18 +69,18 @@
     },
     {
       "path": "releases/README.md",
-      "sha256": "3440a3e0e54925d7fdbe41226ccaa8b96b8cdd88f7f70fb851fb954db356ae9f",
-      "size_bytes": 39600
+      "sha256": "f9f7f39924c3eaa5395a31e70e2f2b1a99de17030e178da24e19eb8c2a85f744",
+      "size_bytes": 43018
     },
     {
       "path": "templates/README.md",
-      "sha256": "2a3884778290d03e19a0916915c9574a11aa20c74105722e5f0d73c40bf4a0ba",
-      "size_bytes": 939
+      "sha256": "0a49c41bb6b1066fd2e7c48666099a40acc0135f9c46b43b15e5a20ac43fed4e",
+      "size_bytes": 1020
     },
     {
       "path": "templates/new-requirement-opener.md",
-      "sha256": "b20fee81006a95989e5ba62cf5a17b8ab69f9622778c9bfee0d48ed4ee636afc",
-      "size_bytes": 2091
+      "sha256": "50268bdc5dcd27f8ab35e323b012262cbe31236c1d2c52720db5fbdd97764066",
+      "size_bytes": 2266
     }
   ],
   "related_standards": [
@@ -102,5 +102,19 @@
       "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json",
       "target_tag": "project-structure-v1.0.0"
     }
-  ]
+  ],
+  "material_update": {
+    "base_commit": "d23b63721c8b17fe0f3692897ed5975f711a9d4e",
+    "paths": [
+      "ACCEPTANCE.md",
+      "CHANGELOG.md",
+      "README.md",
+      "releases/README.md",
+      "releases/manifest.json",
+      "templates/README.md",
+      "templates/new-requirement-opener.md"
+    ],
+    "status": "initial-review",
+    "approval": null
+  }
 }
