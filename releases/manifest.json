@@ -114,7 +114,11 @@
       "templates/README.md",
       "templates/new-requirement-opener.md"
     ],
-    "status": "initial-review",
-    "approval": null
+    "status": "approved",
+    "approval": {
+      "reference": "Sentinel_2c044a984b7481919af0f74ac8bebeec",
+      "approved_at": "2026-10-12T22:20:05Z",
+      "candidate_commit": "4a2543935f9304777595c8df33af5e99f08ca6b8"
+    }
   }
 }
