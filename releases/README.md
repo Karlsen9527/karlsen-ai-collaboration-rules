@@ -1,5 +1,38 @@
 # 发布约定
 
+## core 8.0.0 发布约定
+
+本节仅适用于 8.0.0；以下 7.0.0 及更早原区块完整保留，其中标题、状态措辞、“本次”、可见性和基线仅指各自历史版本，不作为本版当前状态。新增完整读取、需求闭环及变更控制等必遵义务，归 MAJOR；沿用 C/P/R，不新增发布体系。当前状态由同提交根清单及可信批准决定，本节不预报批准或发布结果。
+
+精确对象为版本 8.0.0、core 原始字节 SHA-256 124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda（13636 bytes）与下列完整范围。基线 B=1493ad2f34a5824c86f3041ee8e8ac3c66eb6d92。准备授权不代替最终发布批准；正文变化须重算并补批，全部材料同批冻结，配套摘要证明完整性，不声称用户逐字审核配套。
+
+仅更新以下 14 路径（含两个新增模板）：
+
+- ACCEPTANCE.md
+- AGENTS.md
+- CHANGELOG.md
+- CLAUDE.md
+- README.md
+- adapters/README.md
+- adapters/codex/README.md
+- adapters/dsh/README.md
+- core/PROTOCOL.md
+- projects/rules-repository/PROJECT_SPEC.md
+- releases/README.md
+- releases/manifest.json
+- templates/README.md
+- templates/new-requirement-opener.md
+
+除此之外，独立标准及清单、历史原区块、固定依赖、既有工程模板、配置、技能与业务项目不变，不自动迁移项目 pin。
+
+C 包含 13 个冻结非清单材料与完整候选根清单：version=8.0.0、status=initial-review、effective=false、approved_release=null、target_tag=null；files 按路径升序记录 13 材料原始字节 SHA-256 和大小，related_standards 原样保留。清单不自哈希，不预填未来 C/P/R。
+
+取得精确材料及完整动作的真实最终批准、生成并核验 C 后，P 只转换 /status 为 approved、/effective 为 true、/approved_release 为恰含 version、protocol_sha256、approval_reference、candidate_commit、approved_on 的对象。前两项复制冻结版本和摘要；批准引用与 UTC 日期来自本次最终批准，不能沿用旧版本批准或仅准备材料的批准；candidate_commit 是已产生且远端核验的 C。其他字段与 13 材料字节不变；JSON 两空格缩进、UTF-8/LF、末尾换行，不公开私人批准原文。
+
+最终批准须覆盖公开仓库 Karlsen9527/karlsen-ai-collaboration-rules、短期分支 release/core-8.0.0-requirement-closure、14 路径完整内容及摘要、上述唯一转换、C/P、面向 main 的草稿 PR、审查后转 ready、merge 合并及有界只读回执。写入前核对 public、main=B、分支无冲突及工具能力；合并前核验 main=B、head=P、14 路径白名单、全部材料及适用检查，以 expected_head_sha=P 按 merge 合并。读取真实 R，核验 R 与 P 树一致及同提交正文、清单和可信批准。
+
+不新增标签、GitHub Release、自动化或部署。基线、范围、字节、权限实质变化或未知既有对象先停止受影响写入并查明；不强推、不擅自回滚。可能重复外部效果的未知结果先读回再重试，已完成动作不重做。回执记录真实 C/P/R、PR、摘要、可信批准与未验证项；远端核验通过才报告发布完成，文档发布不证明项目采用或跨模型运行验证。
+
 ## core 7.0.0 候选发布约定
 
 本节仅适用于 7.0.0；以下 6.0.0 及更早契约完整保留，其中私有仓库条件、名称、“当前”“本次”和基线仅指各自历史发布，不作为公开读取的登录前提。本版新增可复制中文正文约 35～50 字换行要求，并调整角色和能力适配；旧合规流程需要调整，归 MAJOR。沿用 C/P/R，不新增发布体系。

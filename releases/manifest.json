@@ -1,76 +1,80 @@
 {
   "protocol_id": "general-collaboration-protocol",
-  "version": "7.0.0",
-  "status": "approved",
-  "effective": true,
+  "version": "8.0.0",
+  "status": "initial-review",
+  "effective": false,
   "protocol_path": "core/PROTOCOL.md",
-  "protocol_sha256": "45e5230268cb977ac717b4922b471e94b957607abe6251e485bbc7cb029293a4",
+  "protocol_sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
-  "summary": "7.0.0：中性任务角色、可复制中文正文每行约 35～50 字、实际能力适配及公开读取信任边界。新增交付义务按 MAJOR；只更新必要入口和发布材料，历史、独立标准及项目 pin 不变。",
-  "approved_release": {
-    "version": "7.0.0",
-    "protocol_sha256": "45e5230268cb977ac717b4922b471e94b957607abe6251e485bbc7cb029293a4",
-    "approval_reference": "Sentinel_d40782c50b408191a904e1a2025c28fe",
-    "candidate_commit": "6ebf5114dcd2d0a1141130d90b870598af881c94",
-    "approved_on": "2026-10-12"
-  },
+  "summary": "8.0.0：完整读取与回复前检查、推荐决策和短答绑定、需求闭环、变更停令与真实验收；新增薄口令及导航。新增必遵义务按 MAJOR；历史、独立标准、既有工程模板、配置及项目 pin 保留。",
+  "approved_release": null,
   "target_tag": null,
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "4539197195b755280f48f059adb0cb6a9cb7ed18dba85c525bfdab62c682fc4f",
-      "size_bytes": 12771
+      "sha256": "8b55bc3307702eb59fa38dd12d5c6e16744dfd00c2a86d7f3ee2ff57f363e300",
+      "size_bytes": 15011
     },
     {
       "path": "AGENTS.md",
-      "sha256": "35ed8176c800f1c02f4f0ab8166731de85171b1a068a4737c3699bd62394e38e",
-      "size_bytes": 2080
+      "sha256": "ac6fdf11a4c9b2b49887125079188ae114970eedab0598a81a09f7235e7b886c",
+      "size_bytes": 2321
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "6ae76c01a3200dd5e023c1afc58559dd96b4d417198c8b3411e480f1e5aa9894",
-      "size_bytes": 8278
+      "sha256": "a0b45aba7351f698f9e872e9ef3de23080082beb400e6e4f7c485032d73616ab",
+      "size_bytes": 9135
     },
     {
       "path": "CLAUDE.md",
-      "sha256": "5047df1fc1c2a356f70a197625ef612627f79253262fc5884204d089df19ad28",
+      "sha256": "5b8c16cea171f6fbfb933735654e69de6d0a86f5438fcc08482fbfb76703a307",
       "size_bytes": 975
     },
     {
       "path": "README.md",
-      "sha256": "2a9bc0c4e4c8bb187f62a9442eff88af816c6238351637fb7043e4ad0c09a460",
-      "size_bytes": 6901
+      "sha256": "dd91c0c54d6cfd0859e37d58c8b229760f984a24b5052fe01ad64ad353645627",
+      "size_bytes": 7043
     },
     {
       "path": "adapters/README.md",
-      "sha256": "126bd6527e5bfc0f5afe950ce3041f5bf0a854a4925e8e456ffc332ea60ec5e3",
-      "size_bytes": 5268
+      "sha256": "e4a0c35626a0a56df1e3cb7f954fe553c64cf195f9ab11ec40f2722c86b371ea",
+      "size_bytes": 5612
     },
     {
       "path": "adapters/codex/README.md",
-      "sha256": "3c0a6589c4ca9da1f5e3f7f56cccb5d93c5697b64acd8029b32d77743304860f",
+      "sha256": "c75a0710b40b70cef279b5aac53df1bdeb411cda630f52dd903fba55781243f7",
       "size_bytes": 5632
     },
     {
       "path": "adapters/dsh/README.md",
-      "sha256": "68e70925e4c5697ae7fe1f4d42f3ad99ef0303c25f73216aeb4d003e51f97b7a",
+      "sha256": "d1369b0dbd5cd88e13904e6745e5bd0271b587024806e8cda466b506f153f2d2",
       "size_bytes": 3572
     },
     {
       "path": "core/PROTOCOL.md",
-      "sha256": "45e5230268cb977ac717b4922b471e94b957607abe6251e485bbc7cb029293a4",
-      "size_bytes": 10401
+      "sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
+      "size_bytes": 13636
     },
     {
       "path": "projects/rules-repository/PROJECT_SPEC.md",
-      "sha256": "e23c6e43b2e83134d060380a706d6c4df082a14271abce7c136303228df3b046",
+      "sha256": "57e4b215aa6ae04fd41c456c7ba48b5085b629fd15194085778eeacd4e553d27",
       "size_bytes": 4179
     },
     {
       "path": "releases/README.md",
-      "sha256": "ed429bd4f97140b7f02cf0d0197a66dbd0470ba2bef1303244bc28728583b464",
-      "size_bytes": 36349
+      "sha256": "3440a3e0e54925d7fdbe41226ccaa8b96b8cdd88f7f70fb851fb954db356ae9f",
+      "size_bytes": 39600
+    },
+    {
+      "path": "templates/README.md",
+      "sha256": "2a3884778290d03e19a0916915c9574a11aa20c74105722e5f0d73c40bf4a0ba",
+      "size_bytes": 939
+    },
+    {
+      "path": "templates/new-requirement-opener.md",
+      "sha256": "b20fee81006a95989e5ba62cf5a17b8ab69f9622778c9bfee0d48ed4ee636afc",
+      "size_bytes": 2091
     }
   ],
   "related_standards": [
