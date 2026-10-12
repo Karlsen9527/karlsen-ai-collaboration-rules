@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "8.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "8.0.0：完整读取与回复前检查、推荐决策和短答绑定、需求闭环、变更停令与真实验收；新增薄口令及导航。新增必遵义务按 MAJOR；历史、独立标准、既有工程模板、配置及项目 pin 保留。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "8.0.0",
+    "protocol_sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
+    "approval_reference": "Sentinel_378f0d852c1081919ecbec6b8282ec9e",
+    "candidate_commit": "afa2ea843b34eba7c1291217abd009435eca970e",
+    "approved_on": "2026-10-12"
+  },
   "target_tag": null,
   "files": [
     {
