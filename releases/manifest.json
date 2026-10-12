@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "6.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "71bb58eb521778cf759bdd00fd1cea8026bb8def4ea762fb28f49d036987ef21",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "6.0.0 仅调整第 3、5、7 节：指令代码块合理分组、准备与发布授权区分、用户代转保留完整任务路线和本次所需验证。按 MAJOR 发布；总纲及其余各节不变，必要配套摘要只证明完整性。生效以同提交清单及可信最终发布批准为准；不迁移项目、修改技能或部署运行能力。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "6.0.0",
+    "protocol_sha256": "71bb58eb521778cf759bdd00fd1cea8026bb8def4ea762fb28f49d036987ef21",
+    "approval_reference": "Sentinel_d548dbf52a348191b6bc3e9d1e0a0e17",
+    "candidate_commit": "77eafa82d44ee2536aefcf736e6105d0ec0d6759",
+    "approved_on": "2026-10-12"
+  },
   "target_tag": null,
   "files": [
     {
