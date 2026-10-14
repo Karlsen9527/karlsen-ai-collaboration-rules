@@ -1,14 +1,20 @@
 {
   "protocol_id": "general-collaboration-protocol",
   "version": "9.0.0",
-  "status": "initial-review",
-  "effective": false,
+  "status": "approved",
+  "effective": true,
   "protocol_path": "core/PROTOCOL.md",
   "protocol_sha256": "6c4bdf69f56b9410ac977b0a75042dc9f97795e578b919300f53ce22922c6dc7",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
   "summary": "9.0.0 候选：持续收集逐条需求，明确补充完毕后汇总并关闭关键缺口；双选需求确认仅进入设计或返回收集，三选菜单限方案执行阶段。旧合规流程改变，按 MAJOR；历史、独立标准及项目 pin 保留。",
-  "approved_release": null,
+  "approved_release": {
+    "version": "9.0.0",
+    "protocol_sha256": "6c4bdf69f56b9410ac977b0a75042dc9f97795e578b919300f53ce22922c6dc7",
+    "approval_reference": "Sentinel_e82a495ce8c48191a9ccca55f6023258",
+    "candidate_commit": "b74f691c719c2d84bc4e552434ec93711c22eeee",
+    "approved_on": "2026-10-14"
+  },
   "target_tag": null,
   "files": [
     {
