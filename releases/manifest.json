@@ -1,86 +1,80 @@
 {
   "protocol_id": "general-collaboration-protocol",
-  "version": "8.0.0",
-  "status": "approved",
-  "effective": true,
+  "version": "9.0.0",
+  "status": "initial-review",
+  "effective": false,
   "protocol_path": "core/PROTOCOL.md",
-  "protocol_sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
+  "protocol_sha256": "6c4bdf69f56b9410ac977b0a75042dc9f97795e578b919300f53ce22922c6dc7",
   "hash_algorithm": "sha256",
   "hash_scope": "protocol_sha256 covers raw bytes of core/PROTOCOL.md only; each files entry covers raw bytes of its named file; the manifest is not included",
-  "summary": "8.0.0：完整读取与回复前检查、推荐决策和短答绑定、需求闭环、变更停令与真实验收；新增薄口令及导航。新增必遵义务按 MAJOR；历史、独立标准、既有工程模板、配置及项目 pin 保留。",
-  "approved_release": {
-    "version": "8.0.0",
-    "protocol_sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
-    "approval_reference": "Sentinel_378f0d852c1081919ecbec6b8282ec9e",
-    "candidate_commit": "afa2ea843b34eba7c1291217abd009435eca970e",
-    "approved_on": "2026-10-12"
-  },
+  "summary": "9.0.0 候选：持续收集逐条需求，明确补充完毕后汇总并关闭关键缺口；双选需求确认仅进入设计或返回收集，三选菜单限方案执行阶段。旧合规流程改变，按 MAJOR；历史、独立标准及项目 pin 保留。",
+  "approved_release": null,
   "target_tag": null,
   "files": [
     {
       "path": "ACCEPTANCE.md",
-      "sha256": "a10aaa91705dce4705bfd191fc3912f93df43964981447d95ed778ed75237f21",
-      "size_bytes": 16612
+      "sha256": "42ab49f4850e9654c27555dca83ac0e239feb5fb6b2d6561ec9f627c25086682",
+      "size_bytes": 18485
     },
     {
       "path": "AGENTS.md",
-      "sha256": "ac6fdf11a4c9b2b49887125079188ae114970eedab0598a81a09f7235e7b886c",
+      "sha256": "7b700b76bf84bb70c850b55abcb0c46a62173b1a799273ba9424f7b60a7e44c7",
       "size_bytes": 2321
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "db7c7a5810cf714b7594f1269512718501a07038a4881e3d2bdcd395b29945c8",
-      "size_bytes": 9699
+      "sha256": "346c0bedd1ca04cd9903404e33f3f96f9792a85835ff0557f9a57e2437a71e50",
+      "size_bytes": 10500
     },
     {
       "path": "CLAUDE.md",
-      "sha256": "5b8c16cea171f6fbfb933735654e69de6d0a86f5438fcc08482fbfb76703a307",
+      "sha256": "1555b035ef2017a2669abebcf9cbffd02d37b8b1b919cfe5be60dcc24a16f1b0",
       "size_bytes": 975
     },
     {
       "path": "README.md",
-      "sha256": "557b8c5cd1b94365acfa09423f646cb8506859caf817ddfcc7fdd60963a86151",
-      "size_bytes": 7112
+      "sha256": "fade55f41116dd98930aa9706d846fab48557e3d9bf622f10f852da0917b0b4f",
+      "size_bytes": 7153
     },
     {
       "path": "adapters/README.md",
-      "sha256": "e4a0c35626a0a56df1e3cb7f954fe553c64cf195f9ab11ec40f2722c86b371ea",
+      "sha256": "493ce43da542595cfc3fec209394c4708a2145ab5bd7391319c38f1ad5c8c3e0",
       "size_bytes": 5612
     },
     {
       "path": "adapters/codex/README.md",
-      "sha256": "c75a0710b40b70cef279b5aac53df1bdeb411cda630f52dd903fba55781243f7",
+      "sha256": "7eb07fa76a133d65811f033d33b54cae8e181fb4fc7302ad91f54bcfde6d12b1",
       "size_bytes": 5632
     },
     {
       "path": "adapters/dsh/README.md",
-      "sha256": "d1369b0dbd5cd88e13904e6745e5bd0271b587024806e8cda466b506f153f2d2",
+      "sha256": "d65c64446227c720988797645184dea7bbc6da0b12e4bde494a8af190e98d2bf",
       "size_bytes": 3572
     },
     {
       "path": "core/PROTOCOL.md",
-      "sha256": "124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda",
-      "size_bytes": 13636
+      "sha256": "6c4bdf69f56b9410ac977b0a75042dc9f97795e578b919300f53ce22922c6dc7",
+      "size_bytes": 15393
     },
     {
       "path": "projects/rules-repository/PROJECT_SPEC.md",
-      "sha256": "57e4b215aa6ae04fd41c456c7ba48b5085b629fd15194085778eeacd4e553d27",
+      "sha256": "13f9736f71066dbfb562b321cca348302b185507f4f0d1ecd3f0b713a1c249df",
       "size_bytes": 4179
     },
     {
       "path": "releases/README.md",
-      "sha256": "f9f7f39924c3eaa5395a31e70e2f2b1a99de17030e178da24e19eb8c2a85f744",
-      "size_bytes": 43018
+      "sha256": "9f3fd64c298f7f4425c9b65ad3f08480ecb9b000b3330b58dd66139a8caa8ae0",
+      "size_bytes": 46247
     },
     {
       "path": "templates/README.md",
-      "sha256": "0a49c41bb6b1066fd2e7c48666099a40acc0135f9c46b43b15e5a20ac43fed4e",
-      "size_bytes": 1020
+      "sha256": "fa51461099919833933398f6b449b25b342153f2ec5c5200bc2ecde8a1641100",
+      "size_bytes": 1105
     },
     {
       "path": "templates/new-requirement-opener.md",
-      "sha256": "50268bdc5dcd27f8ab35e323b012262cbe31236c1d2c52720db5fbdd97764066",
-      "size_bytes": 2266
+      "sha256": "6a89f5382aec3165a08f5c4f16a3dac91f698fd7f20395132ca1863a589ee5a4",
+      "size_bytes": 2458
     }
   ],
   "related_standards": [
@@ -102,23 +96,5 @@
       "manifest_path": "standards/releases/project-structure/1.0.0/manifest.json",
       "target_tag": "project-structure-v1.0.0"
     }
-  ],
-  "material_update": {
-    "base_commit": "d23b63721c8b17fe0f3692897ed5975f711a9d4e",
-    "paths": [
-      "ACCEPTANCE.md",
-      "CHANGELOG.md",
-      "README.md",
-      "releases/README.md",
-      "releases/manifest.json",
-      "templates/README.md",
-      "templates/new-requirement-opener.md"
-    ],
-    "status": "approved",
-    "approval": {
-      "reference": "Sentinel_2c044a984b7481919af0f74ac8bebeec",
-      "approved_at": "2026-10-12T22:20:05Z",
-      "candidate_commit": "4a2543935f9304777595c8df33af5e99f08ca6b8"
-    }
-  }
+  ]
 }
