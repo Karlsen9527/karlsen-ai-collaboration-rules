@@ -1,5 +1,36 @@
 # 发布约定
 
+## core 9.0.0 候选约定：持续收集与阶段菜单
+
+本节仅适用于 9.0.0；以下 8.0.0 及更早区块完整保留，历史“本次”、状态、基线和批准仅限各自版本，不授权本候选。旧流程允许明确小改绕过收集，本版改为持续收集并分离需求确认与执行菜单，旧合规做法需调整，归 MAJOR。
+
+基线 B=b0915deede9f4f59a794c6673001debab75cf040。精确正文版本 9.0.0、原始字节 SHA-256 6c4bdf69f56b9410ac977b0a75042dc9f97795e578b919300f53ce22922c6dc7（15393 bytes）。本阶段只准备、校验候选，并在取得相应授权后提交到短期分支、创建面向 main 的草稿 PR；这些动作不批准新正文生效或最终发布，不将历史批准沿用到本版。正文变化须重算并重新审阅。
+
+本次范围冻结为以下 14 路径；除正文、口令及本版变更/验收/发布说明，其他改动仅同步当前版本和必要导航：
+
+- ACCEPTANCE.md
+- AGENTS.md
+- CHANGELOG.md
+- CLAUDE.md
+- README.md
+- adapters/README.md
+- adapters/codex/README.md
+- adapters/dsh/README.md
+- core/PROTOCOL.md
+- projects/rules-repository/PROJECT_SPEC.md
+- releases/README.md
+- releases/manifest.json
+- templates/README.md
+- templates/new-requirement-opener.md
+
+独立标准及清单、历史原区块、固定依赖、既有工程模板、配置、技能和其他项目保持原样，不自动迁移项目 pin。基线原根清单及其 material_update 批准保留在固定 B 历史快照；当前根清单仅描述 9.0.0 候选，删除仅适用于旧材料维护的 material_update，不把旧批准带入新候选。
+
+C 包含 13 个冻结非清单材料及根清单：version=9.0.0、status=initial-review、effective=false、approved_release=null、target_tag=null；files 按路径排序，机器计算原始字节 SHA-256 与大小；related_standards 原样保留。清单不包含自身哈希，不预填未来 C/P/R。候选状态不能作为生效证据，正文及全部材料冻结后以真实 C 供审阅。
+
+未来若另行取得精确版本、正文摘要、全部冻结材料及有界发布动作的真实最终批准，沿用 C/P/R：P 仅允许 /status 转 approved、/effective 转 true、/approved_release 填入恰含 version、protocol_sha256、approval_reference、candidate_commit、approved_on 的对象。版本及摘要复制冻结值，引用及 UTC 日期来自本版新最终批准，candidate_commit 为已产生且核验的 C；其余字段及材料字节不变。该转换约定不是执行授权；本阶段不生成 P、不转 ready、不合并、不新增标签或 GitHub Release。
+
+后续发布如获批准，须重新核对 public、main=B、head、14 路径及全部字节，明确分支、PR、merge 动作和只读回执范围；以 expected_head_sha 约束合并，读取真实 R 并核验 R/P 树、正文、根清单与可信批准。基线、字节、权限或目标变化先停受影响写入；未知外部结果先读回，不强推、不重写历史、不擅自回滚。JSON 两空格缩进、UTF-8/LF、末尾换行。不新增自动化、部署或项目迁移，不公开私人审批原文。草稿 PR、静态检查或哈希相同不代表发布完成或跨模型运行通过。
+
 ## core 8.0.0 配套材料维护：两次发送开场口令
 
 本节仅适用于基线 B=d23b63721c8b17fe0f3692897ed5975f711a9d4e 之后的本次配套维护；不修改或重新发布 core 正文，不提升 core 版本。正文仍为 8.0.0、SHA-256 124ae378e168c6af876b4287dc1713274c858b883a8b6431f03c17ae2551cbda、13636 bytes。原 8.0.0 发布材料与批准固定从 [原快照](https://github.com/Karlsen9527/karlsen-ai-collaboration-rules/tree/d23b63721c8b17fe0f3692897ed5975f711a9d4e) 核验，以下原发布、验收和变更区块完整保留；原批准不覆盖本次材料修订。
